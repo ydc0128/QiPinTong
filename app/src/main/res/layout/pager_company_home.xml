@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:公司详情页的主页内容-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="45px"
+        android:text="公司介绍"
+        android:textColor="@color/colortitletext"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:lineSpacingExtra="10px"
+        android:text="当太阳落山的时候，我开始启程。
+　　没有温暖，没有花香，没有鸟语。
+　　猫头鹰的叫唤，乌鸦的歌唱，伴我直到满天星斗。
+　　没有月亮的夜，我真正有解脱的飘然.我的目标是幽谧的净土。
+　　西游没有边界就像人的七情六欲，走过的不是克服面对的又是束缚。
+　　寂寞的人最终走到一块选择旅途，不是为了目标只是为了过程。
+　　不是为了过程只是为了走向空虚。
+　　漫漫的跋涉只印证了天界的不可抗拒，世间的苦难暂且寄托于经籍的取得。
+　　八十一难不足以证明行者反抗的气魄。
+　　我也要西游，不到达目标而且希望没有结局。
+　　在东方露出第一线曙光时就落脚，光明和温暖中我看不见前面的路。"
+        android:textColor="@color/colormuchgray"
+        android:textSize="14sp"
+        />
+
+    <include layout="@layout/viewlinbackground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="45px"
+        android:text="公司地址"
+        android:textColor="@color/colortitletext"
+        android:textSize="16sp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_company_details_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:nestedScrollingEnabled="false"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@drawable/lin_border">
+
+        <TextView
+            android:id="@+id/tv_company_details_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="面试评价(5)"
+            android:textColor="@color/colortextgray"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_company_details_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="3.5"
+            android:textColor="@color/colororange"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toLeftOf="@+id/tv_company_details_grade"
+            android:text="综合评价"
+            android:textColor="@color/colormuchgray"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_company_details_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:nestedScrollingEnabled="false"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</LinearLayout>

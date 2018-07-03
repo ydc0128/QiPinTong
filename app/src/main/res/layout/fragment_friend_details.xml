@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_friend_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+    <!--Description:朋友动态详情页面 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <include layout="@layout/refresh_head"/>
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:id="@+id/sv_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="830px">
+
+
+                <ImageView
+                    android:id="@+id/iv_friend_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="720px"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/background"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="120px"
+                    android:layout_marginRight="340px"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="3"
+                    android:singleLine="true"
+                    android:text="韩雪冬"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    />
+
+
+                <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+                    android:id="@+id/CIV_item_friend_icon"
+                    android:layout_width="260px"
+                    android:layout_height="260px"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="50px"
+                    android:src="@drawable/icon"/>
+
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60px"
+                android:layout_marginTop="100px"
+                >
+
+
+                <FrameLayout
+                    android:id="@+id/fl_friend_new_message"
+                    android:layout_width="460px"
+                    android:layout_height="130px"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.7"
+                        android:background="@color/colorBlack"
+                        />
+
+
+                    <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+                        android:id="@+id/iv_friend_message_icon"
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:src="@color/colorWhite"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_friend_message_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="150px"
+                        android:text="1条新消息"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        />
+
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_friend_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60px"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more"/>
+
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

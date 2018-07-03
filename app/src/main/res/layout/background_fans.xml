@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/my_item_fans"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:layout_centerInParent="true"
+                    app:tl_indicator_bounce_enable="true"
+                    app:tl_indicator_color="@color/colorblue"
+                    app:tl_indicator_height="1dp"
+                    app:tl_indicator_width="200px"
+                    app:tl_textSelectColor="@color/colorblue"
+                    app:tl_textUnselectColor="@color/colortitletext"
+                    app:tl_textsize="14sp"
+                    >
+                </com.flyco.tablayout.CommonTabLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_f_jilu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_f_guanzhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text=""/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

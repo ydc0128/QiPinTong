@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25px"
+    android:paddingBottom="25px"
+    android:paddingRight="50px"
+    android:paddingLeft="50px"
+    android:gravity="center_vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/colororange"
+        android:textSize="@dimen/sp_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="世纪家联"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="20px"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it_city"
+                android:text="西安市"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                />
+            <ImageView
+                android:layout_toRightOf="@+id/it_city"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@mipmap/arrows"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+</LinearLayout>

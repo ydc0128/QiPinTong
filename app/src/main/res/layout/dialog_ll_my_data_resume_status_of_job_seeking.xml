@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:background="@color/colorlinegray">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求职状态"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/tv_dialog_ll_my_data_resume_status_of_job_seeking_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@color/black"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_status_of_job_seeking_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="离职—随时到岗"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_ll_my_data_resume_status_of_job_seeking_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在职—月内到岗"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_status_of_job_seeking_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在职—考虑机会"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_status_of_job_seeking_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在职—暂不考虑"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+
+</LinearLayout>

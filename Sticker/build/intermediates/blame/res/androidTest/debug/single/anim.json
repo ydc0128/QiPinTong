@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\bqmm_slide_in_from_right.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\anim\\bqmm_slide_in_from_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\bqmm_slide_out_to_left.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\anim\\bqmm_slide_out_to_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\bqmm_slide_in_from_left.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\anim\\bqmm_slide_in_from_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\bqmm_slide_out_to_right.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\anim\\bqmm_slide_out_to_right.xml"
+    }
+]

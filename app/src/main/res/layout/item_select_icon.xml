@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.SquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_select_item"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="10px"
+            android:src="@mipmap/jiahao"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+                android:id="@+id/iv_item_select_icon"
+                android:layout_width="135px"
+                android:layout_height="135px"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/time_job"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_select_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_item_select_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="30px"
+                android:text="兼职达人"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.SquareLayout>
+</RelativeLayout>

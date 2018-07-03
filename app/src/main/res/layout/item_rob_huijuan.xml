@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <include layout="@layout/view20background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal"
+        >
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/iv_rob_huijuan_item_project_icon"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_4"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/fl_n_daijin"
+            android:layout_toRightOf="@+id/iv_rob_huijuan_item_project_icon"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_item_take_huiquan_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="泡泡茶"
+                android:textColor="@color/colorgray"
+                android:textSize="16sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_label_gray"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:paddingTop="10px"
+                    android:text="休闲茶饮"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/shape_label_gray"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:paddingTop="10px"
+                    android:singleLine="true"
+                    android:text="饮料/甜品"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_item_daijin_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="中兴广场"
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/sp_12"
+                    />
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/tv_item_daijin_location"
+                    android:src="@mipmap/location"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80px"
+                    android:layout_toRightOf="@+id/tv_item_daijin_location"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="1234Km"
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/sp_12"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_n_daijin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:id="@+id/iv_rob_huijuan_huijuan"
+                android:layout_width="400px"
+                android:layout_height="270px"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/quan_03"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_item_take_huiquan_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:text="折"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_item_take_huiquan_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/shape_label_gray"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:paddingTop="10px"
+                    android:text="立即领取"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

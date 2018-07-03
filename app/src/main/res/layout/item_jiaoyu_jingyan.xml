@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50px"
+    android:layout_marginTop="50px">
+    <TextView
+        android:id="@+id/tv_jj_xuexiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西安理工"
+        android:textSize="@dimen/sp_16"/>
+    <TextView
+        android:id="@+id/tv_jj_kaishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000.9.1"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="50px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+    <TextView
+        android:id="@+id/tv_jj_jieshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2004.6.1"
+        android:textSize="@dimen/sp_16"
+       />
+    <TextView
+        android:id="@+id/tv_jj_zhuanye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金融管理"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="50px"/>
+    <TextView
+        android:id="@+id/tv_jj_xueli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本科"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="50px"/>
+</LinearLayout>
+</LinearLayout>

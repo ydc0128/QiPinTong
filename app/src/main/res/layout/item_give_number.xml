@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_margin="30px"
+        android:orientation="horizontal">
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_give_number_icon"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:background="@color/colorbackground"
+            android:scaleType="centerCrop"
+            android:src="@color/colorred"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_give_number_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="两米一君"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_give_number_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="打赏一百通币"
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/sp_16"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_item_give_number_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2017-8-15  12:52:00"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view1background"/>
+
+</LinearLayout>

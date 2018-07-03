@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_emoji_message.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\layout\\item_emoji_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bqmm_item_emoji.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\layout\\bqmm_item_emoji.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bqmm_item_face.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\layout\\bqmm_item_face.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bqmm_message_view_right.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\layout\\bqmm_message_view_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bqmm_message_view_left.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\layout\\bqmm_message_view_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bqmm_keyboard_tab.xml",
+        "source": "C:\\Users\\L\\Desktop\\QiPinTong\\Sticker\\build\\intermediates\\bundles\\debug\\res\\layout\\bqmm_keyboard_tab.xml"
+    }
+]

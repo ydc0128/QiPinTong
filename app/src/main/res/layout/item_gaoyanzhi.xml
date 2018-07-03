@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="30px">
+
+
+        <ImageView
+            android:id="@+id/iv_gyz_zhaopian"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mq_image"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300px"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/iv_gyz_zhaopian"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_gw_zhiwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="张昭"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16"/>
+
+
+                <TextView
+                    android:id="@+id/tv_gw_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/tv_gw_zhiwei"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:text="销售主管"
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/sp_14"/>
+
+                <TextView
+                    android:id="@+id/tv_gyz_yuexin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="5-8k"
+                    android:textColor="@color/colororange"
+                    android:textSize="@dimen/sp_14"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_marginLeft="40px"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/xueli"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_gyz_xueli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="本科"
+                    android:textSize="@dimen/sp_14"/>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50px"
+                    android:src="@mipmap/jingyan"/>
+
+                <TextView
+                    android:id="@+id/tv_gyz_jingyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="1年"
+                    android:textSize="@dimen/sp_14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_marginLeft="40px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/dingwei"/>
+
+                <TextView
+                    android:id="@+id/tv_gyz_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="西安市"
+                    android:textSize="@dimen/sp_14"/>
+
+                <TextView
+                    android:id="@+id/tv_gyz_juli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="2.5km"
+                    android:textSize="@dimen/sp_14"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15px"
+                        android:layout_toLeftOf="@+id/tv_gyz_shuliang"
+                        android:background="@mipmap/liulan"/>
+
+                    <TextView
+                        android:id="@+id/tv_gyz_shuliang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0"
+                        android:textSize="@dimen/sp_14"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view20background"/>
+</LinearLayout>

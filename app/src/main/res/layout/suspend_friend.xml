@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:朋友圈悬浮窗-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <include layout="@layout/view20background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+
+        <TextView
+            android:id="@+id/tv_suspend_friend_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/iv_suspend_details_photo"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="说点什么吧..."
+            android:textColorHint="@color/colorgray"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_suspend_details_photo"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/camera"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view20background"/>
+</LinearLayout>

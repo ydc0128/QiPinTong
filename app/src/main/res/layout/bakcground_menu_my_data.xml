@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_my_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/view20background"/>
+            <include layout="@layout/view20background"/>
+            <LinearLayout
+                android:id="@+id/ll_my_data_edit_your_resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50px"
+                >
+                <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+                    android:id="@+id/iv_mm_photo"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:src="@drawable/icon"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200px"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/tv_my_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="菲利克斯"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <ImageView
+                            android:id="@+id/iv_my_xingbie"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:src="@mipmap/nan"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_marginLeft="10px"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="50px"
+    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更换头像"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50px"
+                        />
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                      android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+                    </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/view20background"/>
+            <include layout="@layout/view20background"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:gravity="center_vertical"
+                android:layout_marginRight="50px"
+                android:id="@+id/rl_my_data_jichuziliao"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基础资料"
+                    android:layout_marginLeft="50px"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <include layout="@layout/view20background"/>
+            <include layout="@layout/view20background"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:gravity="center_vertical"
+                android:layout_marginRight="50px"
+                android:id="@+id/rl_my_data_bianjijinli"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑简历"
+                    android:layout_marginLeft="50px"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <include layout="@layout/view20background"/>
+            <include layout="@layout/view20background"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="150px"
+                android:layout_marginBottom="150px">
+            <Button
+                android:id="@+id/bt_jianli_liulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_blue"
+                android:text="浏览简历"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"/>
+           </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

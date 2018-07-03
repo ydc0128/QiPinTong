@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description: 朋友圈发动态选择图片以后显示的图片样式-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/iv_show_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_2"
+            ></com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView>
+
+        <ImageView
+            android:id="@+id/iv_delete_photo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|top"
+            android:src="@mipmap/photo_delect"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

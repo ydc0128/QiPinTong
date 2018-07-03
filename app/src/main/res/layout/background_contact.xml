@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include layout="@layout/viewlinbackground" />
+
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_merchants_in_contact_shangquan"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商圈"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            />
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请填写"
+            android:gravity="right"
+            android:background="@null"
+            android:textSize="@dimen/sp_16"
+            />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_merchants_in_contact_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            />
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请填写"
+            android:gravity="right"
+            android:background="@null"
+            android:textSize="@dimen/sp_16"
+            />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_merchants_in_store_address"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:text="店铺地址"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/merchants_in_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="省-市-区"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/merchants_in_city"
+                android:background="@mipmap/arrows" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/finelinbackground"/>
+
+    <LinearLayout
+        android:id="@+id/ll_merchants_in_license_time"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请填写详细地址"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:textSize="@dimen/sp_16"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <RelativeLayout
+        android:id="@+id/ll_merchants_in_map_markers"
+        android:layout_width="wrap_content"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="250px"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_marginRight="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加标记"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorbluebg"/>
+    </RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="150px"
+        >
+        <Button
+            android:id="@+id/tv_cont_baocun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/shape_blue"
+            android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+</LinearLayout>

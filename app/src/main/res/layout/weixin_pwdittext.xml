@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="@color/colorbluebg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置支付密码"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:layout_marginTop="100px"
+        android:gravity="center_horizontal"
+        android:text="设置密码"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_16" />
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PwdEditText
+        android:id="@+id/pet_pwd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:enabled="true"
+        android:focusable="true"
+        android:maxLength="6" />
+
+</LinearLayout>

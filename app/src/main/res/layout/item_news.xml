@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical"
+    >
+    <!--Description:易通学院 要闻条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="340px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_news_icon"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="10px"
+                android:maxLines="2"
+                android:text="安徽绿海商务职业学院第十八期入党积极分子培训班开班"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tv_news_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="精华"
+                    android:textColor="@color/colorfont"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_news_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/tv_news_label"
+                    android:text="185评"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_news_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/tv_news_comment"
+                    android:text="2017-04-17"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_news_icon"
+            android:layout_width="360px"
+            android:layout_height="240px"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="45px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_2"
+            />
+    </RelativeLayout>
+
+
+    <include layout="@layout/view20background"/>
+
+
+</LinearLayout>

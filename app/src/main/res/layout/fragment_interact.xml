@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:zhy="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+    <!--Description:朋友圈详情互动页面-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_interact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_n_bottom"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/view15background"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="40px"
+                    android:orientation="horizontal">
+
+                    <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+                        android:id="@+id/SIV_interact_icon"
+                        android:layout_width="140px"
+                        android:layout_height="140px"
+                        android:background="@drawable/shape_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iv_2"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30px"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_interact_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="时光你好任性"
+                                android:textColor="@color/colorfriendfont"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:id="@+id/iv_interact_delete"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/delete"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_interact_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="2016-10-28"
+                                android:textColor="@color/colorgray"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_interact_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="30px"
+                                android:text="00:00:00"
+                                android:textColor="@color/colorgray"
+                                android:textSize="14sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_interact_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="30px"
+                    android:lineSpacingExtra="10px"
+                    android:text="雨中的城市走走停停看看 , 你们的城市下雨了吗"
+                    android:textColor="@color/colortitletext"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp"/>
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:descendantFocusability="blocksDescendants"-->
+                <!--&gt;-->
+
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/rv_interact_images"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="180px"-->
+                <!--android:layout_marginRight="20px"-->
+                <!--android:layout_marginTop="20px"-->
+                <!--android:nestedScrollingEnabled="false">-->
+
+                <!--</android.support.v7.widget.RecyclerView>-->
+
+                <!--</RelativeLayout>-->
+
+                <com.example.qipintongzhongguozongbu.myqipintong.view.FriendNineDetailsView
+                    android:id="@+id/FNV_interact_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="20px"
+                    />
+
+
+                <!--  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="130px"
+                      android:layout_marginLeft="30px"
+                      android:layout_marginRight="30px">
+
+
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="150px"
+                          android:orientation="horizontal">
+
+                          <ImageView
+                              android:layout_width="50px"
+                              android:layout_height="50px"
+                              android:src="@mipmap/location"/>
+
+                          <TextView
+                              android:id="@+id/tv_item_location"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_centerVertical="true"
+                              android:ellipsize="middle"
+                              android:maxEms="9"
+                              android:singleLine="true"
+                              android:text="西安*雁塔区"
+                              android:textColor="@color/colorgray"
+                              android:textSize="14sp"/>
+
+
+                      </LinearLayout>
+
+
+                      <TextView
+                          android:id="@+id/tv_interact_give_number"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          android:ellipsize="end"
+                          android:maxEms="9"
+                          android:singleLine="true"
+                          android:text="23人已打赏"
+                          android:textColor="@color/colorgray"
+                          android:textSize="14sp"/>
+
+                      <ImageView
+                          android:layout_width="55px"
+                          android:layout_height="55px"
+                          android:layout_centerVertical="true"
+                          android:layout_marginRight="10px"
+                          android:layout_toLeftOf="@+id/tv_interact_give_number"
+                          android:src="@mipmap/give_tongbi"/>
+
+
+                  </RelativeLayout>
+
+
+
+
+
+                <include layout="@layout/view15background"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30px"
+                        android:text="全部评价"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_interact_pingjia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="(0)"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_interact_pinglun"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40px"
+                    android:background="@color/background"
+                    android:gravity="center_horizontal"
+                    android:text="暂无评论哦!"
+                    />    -->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_industry_select_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="170px"
+                        >
+
+                        <ImageView
+                            android:layout_width="55px"
+                            android:layout_height="55px"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/location"/>
+
+                        <TextView
+                            android:id="@+id/tv_industry_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="middle"
+                            android:maxEms="9"
+                            android:singleLine="true"
+                            android:text="西安*雁塔区"
+                            android:textColor="@color/colorfriendfont"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_interact_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxEms="9"
+                        android:singleLine="true"
+                        android:text="23人已打赏"
+                        android:textColor="@color/colorfriendfont"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="55px"
+                        android:layout_height="55px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10px"
+                        android:layout_toLeftOf="@+id/tv_interact_number"
+                        android:src="@mipmap/give_tongbi"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px">
+
+
+                    <ImageView
+                        android:id="@+id/iv_interact_zan"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="80px"
+                        android:layout_toLeftOf="@+id/iv_interact_message"
+                        android:src="@mipmap/zan_black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_interact_message"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="80px"
+                        android:layout_toLeftOf="@+id/iv_interact_give"
+                        android:src="@mipmap/message_black"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iv_interact_give"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="80px"
+                        android:src="@mipmap/fxtongbi"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <include layout="@layout/view1background"/>
+
+
+                <com.example.qipintongzhongguozongbu.myqipintong.view.PraiseTextView
+                    android:id="@+id/ptv_Praise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="20px"
+                    android:lineSpacingExtra="10px"
+                    android:textColor="@color/colortitle"
+                    android:textSize="@dimen/sp_14"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:text="好友评论"
+                    android:textColor="@color/colorgray"
+                    android:textSize="16sp"
+
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_item_interact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80px"
+                        android:layout_marginRight="20px"
+                        android:nestedScrollingEnabled="false">
+                    </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_n_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/lin_border"
+        >
+
+        <EditText
+            android:id="@+id/et_interact_pingjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/tv_interact_submit"
+            android:background="@null"
+            android:hint="请填写评价"
+            android:textSize="@dimen/sp_12"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_interact_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_blue"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:paddingTop="20px"
+            android:text="提交评价"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_14"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:paddingTop="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:background="@color/colorblue">
+        <TextView
+            android:id="@+id/city_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            />
+        <TextView
+            android:id="@+id/city_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:paddingRight="50px"
+        android:paddingLeft="50px"
+        android:paddingBottom="30px"
+        >
+    </com.zhy.view.flowlayout.TagFlowLayout>
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description: 校园直聘最新职位列表 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/iv_item_time_position_icon"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nan"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="掌勺大厨"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="5-8k"
+                    android:textColor="@color/colororange"
+                    android:textSize="16sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_commpany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="情妹妹"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="14sp"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_itme_time_position_vip"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15px"
+                    android:layout_toRightOf="@+id/tv_item_time_position_commpany"
+                    android:src="@mipmap/vip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:text="酒店/餐饮"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/xueli"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_recruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="高中"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/tv_item_time_position_recruit"
+                    android:src="@mipmap/time_image"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_recruit_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="85px"
+                    android:layout_toRightOf="@+id/tv_item_time_position_recruit"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="1年"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/location"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="福州市"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_time_position_see_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="9527"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/tv_item_time_position_see_number"
+                    android:src="@mipmap/eyeimage"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view15background"/>
+</LinearLayout>

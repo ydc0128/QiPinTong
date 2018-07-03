@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:有才有貌个人详情的相册详情 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_person_details_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="40px"
+            android:nestedScrollingEnabled="false"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+</LinearLayout>

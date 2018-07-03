@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+    <!--Description:好项目详情页面的融资历史条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <TextView
+        android:id="@+id/tv_item_history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15px"
+        android:text="2015年11月"
+        android:textColor="@color/colormuchgray"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_history_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:padding="15px"
+        android:text="种子轮   200万人民币    银江资本"
+        android:textColor="@color/colorgray"
+        android:textSize="14sp"
+        />
+
+
+</LinearLayout>

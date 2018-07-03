@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorblue">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客户总量"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"/>
+</LinearLayout>
+    <include layout="@layout/view20background"/>
+    <LinearLayout
+        android:id="@+id/lv_keheku_jinrixinzeng"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/jrxz" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:text="今日新增"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="1"
+                    android:layout_gravity="center_vertical"/>
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:background="@mipmap/arrows"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view20background" />
+    <LinearLayout
+        android:id="@+id/lv_keheku_mingxi"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/kehu" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:text="客户明细"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45px"
+                    android:background="@mipmap/arrows"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view20background" />
+</LinearLayout>

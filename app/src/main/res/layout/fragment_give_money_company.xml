@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--Description:创投天下 投资机构详情页面 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/bottom_button"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="160px"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="530px"
+                android:background="@color/colorfont"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_give_money_company_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/background"
+                        />
+                </FrameLayout>
+
+                <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+                    android:id="@+id/civ_give_money_company_icon"
+                    android:layout_width="230px"
+                    android:layout_height="230px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+                    android:src="@drawable/icon"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/civ_give_money_company_icon"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginTop="20px"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_give_money_company_ditalis_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="经纬中国"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical"
+                                android:text="成功投资 : "
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_give_money_company_detalis_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical"
+                                android:text="416个"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="55px"
+                                android:layout_height="55px"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/qpt_map_image"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_give_money_company_details_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10px"
+                                android:text="杭州"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:layout_marginTop="10px"
+                android:text="机构简介"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_give_money_company_details_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:lineSpacingExtra="10px"
+                android:text="我大为不解：“老师，条条大路通罗马我听过，三百六十行，行行出状元我也懂，来点不一样的鸡汤好吗。”"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:layout_marginTop="10px"
+                android:text="投资阶段"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_give_money_company_details_jieduan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:lineSpacingExtra="10px"
+                android:text="种子轮/天使轮/A轮/B轮"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:layout_marginTop="10px"
+                android:text="投资领域"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_give_money_company_details_field"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:lineSpacingExtra="10px"
+                android:text="移动互联网/媒体资讯/移动互联网/媒体资讯"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_give_money_company_details_person"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_lin">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="投资人"
+                            android:textColor="@color/colortextgray"
+                            android:textSize="16sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18"
+                            android:textColor="@color/colorblue"
+                            android:textSize="16sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_give_money_company_details_case"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_lin">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="投资案例"
+                            android:textColor="@color/colortextgray"
+                            android:textSize="16sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="108"
+                            android:textColor="@color/colorblue"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_give_money_company_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_give_money_company_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:visibility="gone"
+                    ></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

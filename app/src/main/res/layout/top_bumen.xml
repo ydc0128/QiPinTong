@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/ll_tb_chengshi"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="50px">
+    <TextView
+        android:id="@+id/tb_paihangbang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/colorBlack"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tb_chengshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西安市"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="50px"
+        android:layout_centerVertical="true"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+           android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tb_shuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20px"
+                />
+            <ImageView
+                android:id="@+id/iv_item_point"
+                android:layout_width="60px"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrows_down"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>

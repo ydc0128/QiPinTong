@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/iv_item_food"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/f009" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="天下第一面(逸翠园店)"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_item_food_know"
+                    android:layout_width="120px"
+                    android:layout_height="80px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/on_kown" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_item_food_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="西餐       自助餐"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_item_food_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="大雁塔"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15px"
+                        android:src="@mipmap/location_orange" />
+
+
+                    <TextView
+                        android:id="@+id/tv_item_food_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.5km"
+                        android:textColor="@color/colororange"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_item_food_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="9527"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15px"
+                    android:layout_toLeftOf="@+id/tv_item_food_number"
+                    android:src="@mipmap/eyeimage" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/view20background" />
+
+</LinearLayout>

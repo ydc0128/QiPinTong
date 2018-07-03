@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--Description:送通币界面布局-->
+    <LinearLayout
+        android:id="@+id/rl_my_earnings_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通币个数"
+        android:padding="60px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+
+        />
+<EditText
+    android:id="@+id/tv_send_tongbi_geshu_tianxie"
+    android:layout_width="0px"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:hint="填写个数"
+    android:padding="60px"
+    android:background="@null"/>
+    <TextView
+        android:id="@+id/tv_send_tongbi_geshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个"
+        android:layout_alignParentRight="true"
+        android:padding="60px"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/rl_send_tongbi_meiren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_send_tongbi_meiren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每人限抢"
+            android:padding="60px"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/ed_send_tongbi_geshu"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写个数"
+            android:padding="60px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个"
+            android:layout_alignParentRight="true"
+            android:padding="60px"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+
+<RelativeLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="区域"
+    android:padding="60px"
+    android:textColor="@color/colorBlack"
+    android:textSize="16sp"
+    />
+
+<ImageButton
+    android:id="@+id/tv_send_tongbi_quyu_xuanze"
+    android:layout_width="100px"
+    android:layout_height="100px"
+    android:layout_alignParentRight="true"
+    android:textSize="16sp"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="50px"
+    android:src="@mipmap/arrows_down"
+    />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+<Button
+    android:id="@+id/sendtongbi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="立即发送"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:background="@drawable/shape_orange"
+    />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="未抢通币，48小时后退回"
+           android:layout_centerHorizontal="true"
+            android:paddingTop="300px"
+
+            android:paddingBottom="30px"
+           />
+    </RelativeLayout>
+</LinearLayout>

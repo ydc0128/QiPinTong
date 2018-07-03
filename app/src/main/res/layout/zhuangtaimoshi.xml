@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="840px"
+    android:layout_height="440px"
+    android:background="@drawable/bottom_dialog_bg_shape">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="220px"
+
+    android:layout_marginLeft="100px"
+    android:layout_marginRight="100px"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简历"
+        android:textSize="@dimen/sp_16"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/iv_jianli_open_close"
+        android:layout_width="260px"
+        android:layout_height="85px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sild_bg_on" />
+</RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="220px"
+    android:layout_marginLeft="100px"
+    android:layout_marginRight="100px">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合伙人"
+        android:textSize="@dimen/sp_16"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/iv_hehuoren_open_close"
+        android:layout_width="260px"
+        android:layout_height="85px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sild_bg_on" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:首页全职速聘的条目 校园365最新职位的条目-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_item_good_face"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_good_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="中级UI设计师"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_good_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/tv_item_good_post"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:text="销售经理"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_good_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="5-8K"
+                    android:textColor="@color/colororange"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/acaimgae"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_face_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:text="本科"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_full_time_time"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:layout_toRightOf="@+id/tv_item_face_education"
+                    android:src="@mipmap/time_image"/>
+
+                <TextView
+                    android:id="@+id/tv_tem_face_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_full_time_time"
+                    android:text="3-5年"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/location"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_c_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:text="成都市"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_face_see_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="9527"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5px"
+                    android:layout_toLeftOf="@+id/tv_item_face_see_number"
+                    android:src="@mipmap/eyeimage"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include
+
+        layout="@layout/view20background"
+
+        />
+
+</LinearLayout>

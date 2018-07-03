@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="15px">
+    <!--Description:有才有貌个人详情的教育经历条目 培训经历条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <TextView
+        android:id="@+id/tv_person_details_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2013年7月 - 2014年7月"
+        android:textColor="@color/colormuchgray"
+        android:textSize="12sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_person_details_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="澳洲客厅大学"
+        android:textColor="@color/colormuchgray"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_person_details_occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="会计"
+        android:textColor="@color/colormuchgray"
+        android:textSize="12sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_person_details_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="本科"
+        android:textColor="@color/colormuchgray"
+        android:textSize="12sp"
+        />
+</LinearLayout>

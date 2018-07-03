@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    >
+    <!--商户入住-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/view10background"/>
+            <include layout="@layout/view10background"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_my_bed_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="300px"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="50px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+
+                                android:id="@+id/my_bed_p"
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:layout_marginLeft="50px"
+                                android:layout_weight="0.1"
+                                android:src="@drawable/qpt" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_my_bed_nicheng"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/tv_my_Do_not_disturb"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="30px"
+                                    android:layout_marginTop="10px"
+                                    android:text="菲利克斯.冯.玛格丽特"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_my_bedyour_resume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100px"
+                            android:layout_marginRight="50px"
+                            android:text="更换照片"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_ed_The_company_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:gravity="center_vertical"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorred"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司全称"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginLeft="10px"
+                        />
+                    <EditText
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="请填写"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:textSize="@dimen/sp_16"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_ed_for_short"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorred"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="简称"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginLeft="10px"
+                        />
+                    <EditText
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="请填写"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:textSize="@dimen/sp_16"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_ed_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+
+
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorred"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所属行业"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginLeft="20px"
+                        android:layout_centerVertical="true"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/t_ed_industry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50px"
+                            />
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:background="@mipmap/arrows"
+                           android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_ed_scharacter"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司性质"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                      android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/et_ed_scharacter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:gravity="right"
+                            android:background="@null"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_marginRight="50px"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            />
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:background="@mipmap/arrows"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/finelinbackground"/>
+
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_et_scale"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+
+
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorred"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人员规模"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_gravity="center_vertical" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:id="@+id/tv_ed_scale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:gravity="right"
+                            android:background="@null"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50px"
+                            />
+
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:background="@mipmap/arrows"
+                           android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_et_lightspot"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+
+
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司亮点"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                       android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/tv_ed_lightspot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:gravity="right"
+                            android:background="@null"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="50px"
+                            android:layout_alignParentRight="true"
+                            />
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:background="@mipmap/arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/finelinbackground"/>
+                <!--<LinearLayout-->
+                <!--android:id="@+id/ll_merchants_in_tag"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingTop="10px"-->
+                <!--android:paddingBottom="10px"-->
+                <!--android:layout_marginLeft="50px"-->
+                <!--android:layout_marginRight="50px"-->
+                <!--&gt;-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="0px"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="标签"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:textSize="20sp"-->
+                <!--/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="*"-->
+                <!--android:textColor="@color/colorred"/>-->
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true">-->
+                <!--<TextView-->
+                <!--android:id="@+id/biaoqian"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="请选择"-->
+                <!--android:gravity="right"-->
+                <!--android:background="@null"-->
+                <!--android:textSize="16sp"-->
+                <!--/>-->
+                <!--<ImageView-->
+                <!--android:layout_toRightOf="@+id/biaoqian"-->
+                <!--android:layout_width="60px"-->
+                <!--android:layout_height="60px"-->
+                <!--android:background="@mipmap/arrows"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <include layout="@layout/finelinbackground"/>
+
+                <include layout="@layout/finelinbackground"/>
+                <RelativeLayout
+                    android:id="@+id/rl_ed_tupian"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/ib_et_photograph"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@mipmap/camera"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/finelinbackground"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_ed_lianxifangshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系方式"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginLeft="20px"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                       android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_et_Stage_of_development"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorred"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发展阶段"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginLeft="20px"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_et_Stage_of_development"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:gravity="right"
+                            android:background="@null"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50px"
+                            />
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:background="@mipmap/arrows"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/finelinbackground"/>
+                <LinearLayout
+                    android:id="@+id/ll_et_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+
+
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司介绍"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginLeft="20px"
+                        />
+                    <EditText
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="请填写"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+                <include layout="@layout/finelinbackground"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginTop="150px"
+                    android:layout_marginBottom="150px">
+                    <Button
+                        android:id="@+id/bt_et_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_blue"
+                        android:text="保存"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp_16"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

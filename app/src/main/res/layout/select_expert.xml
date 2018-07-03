@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yyydjk.library.DropDownMenu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/select_expert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/gray"
+        app:ddmaskColor="@color/colorWhite"
+        app:ddmenuBackgroundColor="@color/colorWhite"
+        app:ddmenuSelectedIcon="@mipmap/arrows_top"
+        app:ddmenuTextSize="16sp"
+        app:ddmenuUnselectedIcon="@mipmap/arrows_down"
+        app:ddtextSelectedColor="@color/colorBlack"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddunderlineColor="@color/grgray" />
+
+
+    <TextView
+        android:id="@+id/tv_select_expert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+</LinearLayout>

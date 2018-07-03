@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+    >
+    <!--Description: 易通学院 的信息详情页-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        android:progressDrawable="@drawable/drawable_webview_progress"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_wv"
+        android:layout_below="@+id/progress_bar"
+        android:orientation="vertical">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/wv_school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </com.tencent.smtt.sdk.WebView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorlinegray"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_wv"
+        android:layout_width="match_parent"
+        android:layout_height="155px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/pen"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_n_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_school_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/message"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_school_message_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="30px"
+                    android:text="911"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_school_zan"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/zan_hei"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_school_zan_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15px"
+                    android:text="9527"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_school_submit"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:background="@drawable/shape_blue"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130px"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/rl_n_school"
+            android:background="@null"
+            android:hint="评一下"
+            android:textColor="@color/colorgray"
+            android:textSize="@dimen/sp_14"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

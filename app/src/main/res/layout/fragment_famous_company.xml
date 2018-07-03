@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                          android:id="@+id/rf_famous"
+                                                                          android:layout_width="match_parent"
+                                                                          android:layout_height="match_parent"
+                                                                          android:background="@color/colorWhite"
+    >
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+    <include layout="@layout/refresh_head"/>
+
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/bb_famous"
+                android:layout_width="match_parent"
+                android:layout_height="480px"
+                ></com.youth.banner.Banner>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/colorWhite">
+
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:src="@mipmap/company"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="125px"
+                    android:text="名企在线资源共享,不仅仅是offer"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="14sp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_famous_join"
+                    android:layout_width="270px"
+                    android:layout_height="80px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:background="@drawable/shape_button_orange"
+                    android:text="我要加入"
+                    android:textColor="@color/colororange"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/view20background"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90px"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_famous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:nestedScrollingEnabled="false">
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+
+    <include layout="@layout/load_more"/>
+
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

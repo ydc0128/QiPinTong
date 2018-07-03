@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:hr home 页面 hr的条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_item_hr_icon"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/qptheader"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="4"
+                    android:singleLine="true"
+                    android:text="甄瑞芳"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_item_hr_home_vip"
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/tv_item_hr_home_name"
+                    android:src="@mipmap/vip_yellow"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_see_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="3288"
+                    android:textColor="@color/colorgray"
+                    android:textSize="10sp"/>
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/tv_item_hr_home_see_number"
+                    android:src="@drawable/eyeimage"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="传徳纳惠实业有限公司"
+                    android:textColor="@color/colorgray"
+                    android:textSize="10sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/acaimgae"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_xueli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="45px"
+                    android:text="本科"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_item_hr_home_time"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:layout_toRightOf="@+id/tv_item_hr_home_xueli"
+                    android:src="@mipmap/time_image"/>
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/iv_item_hr_home_time"
+                    android:text="3-5年"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_hr_home_location"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55px"
+                    android:layout_toRightOf="@+id/tv_item_hr_home_time"
+                    android:src="@mipmap/location"/>
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/iv_item_hr_home_location"
+                    android:text="西安"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="职位类别 : "
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_hr_home_postion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="招聘经理/主管"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include
+
+        layout="@layout/viewlinbackground"
+
+        />
+
+</LinearLayout>

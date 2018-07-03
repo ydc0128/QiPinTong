@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/viewlinbackground"/>
+    <include layout="@layout/viewlinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_my_data_dase_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorred"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="10px"
+                />
+
+            <EditText
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请输入"
+                android:gravity="right"
+                android:background="@null"
+                />
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="50px"
+                android:background="@mipmap/arrows"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+        <RelativeLayout
+            android:id="@+id/ll_my_data_dase_gender"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="性别"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_mdd_open_close"
+                    android:layout_width="220px"
+                    android:layout_height="55px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/nan_open" />
+            </RelativeLayout>
+        </RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_my_data_dase_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="10px"
+                />
+            <EditText
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请输入"
+                android:gravity="right"
+                android:background="@null"
+                />
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="50px"
+                android:background="@mipmap/arrows"
+                android:layout_gravity="center_vertical"
+                />
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_my_data_dase_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体型"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="10px"
+                />
+
+        <TextView
+            android:id="@+id/tv_mdd_tixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textSize="@dimen/sp_16"/>
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:background="@mipmap/arrows"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_my_data_dase_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出生年月"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="10px"
+                />
+
+
+        <TextView
+            android:id="@+id/tv_mdd_shengri"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="请输入"
+            android:textSize="@dimen/sp_16" />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:background="@mipmap/arrows"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+
+    <LinearLayout
+        android:id="@+id/ll_my_data_dase_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="婚姻状况"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_mdd_hunyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="请输入"
+            android:textSize="@dimen/sp_16"/>
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/arrows" />
+
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorred"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="环境照片"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请上传环境照片"
+                android:textSize="@dimen/sp_16"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/rv_mdd_photo"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/addimage"
+            >
+
+        </ImageView>
+    </LinearLayout>
+    <include layout="@layout/viewlinbackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50px">
+        <Button
+            android:id="@+id/bt_my_data_dase_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblue"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16"
+            />
+</LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--同城路演item详情页面-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_city_road_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="50px"
+                    android:lineSpacingExtra="10sp"
+                    android:text="奋斗大讲堂之中信：“匠人精神月商业社会”"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30px"
+                        android:text="发布时间:"/>
+
+                    <TextView
+                        android:id="@+id/tv_city_road_release_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30px"
+                        android:text="2016-6-18"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30px"
+                        android:text="浏览："/>
+
+                    <TextView
+                        android:id="@+id/tv_city_road_browse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="302次"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        >
+
+                        <ImageView
+                            android:id="@+id/ib_city_road_like"
+                            android:layout_width="65px"
+                            android:layout_height="65px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="100px"
+                            android:src="@mipmap/shoucangnomal"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/ib_city_road_share"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="-10px"
+                            android:layout_marginRight="30px"
+                            android:src="@mipmap/relaynomai"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_city_road_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="470px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/iv_1"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/view20background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:text="活动时间"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_city_road_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100px"
+                    android:text="2016/10/10～2016/10/31"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:text="活动地点"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_city_road_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100px"
+                    android:text="杭州"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:text="主 办 方  "
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_city_road_sponsor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100px"
+                    android:text="高新汇|第一财经|企聘通"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="50px"
+                android:text="活动详情"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_city_road_essay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:lineSpacingExtra="10px"
+                android:text="童年一去不复返，孩童时光是人生最好的一次成长，而最好的教育莫过于陪伴!每周不间断的户外活动、小长假不可或缺的亲子拓展、寒暑假种类繁多的夏令营；生存挑战、职业探险、灾难自救、运动亲子、感恩公益…全年千余场的自营活动，给孩子一个专陪伴的童年.
+现在，哈童特别为家长准备了专属陪伴卡。每周不间断的户外活动、小长假不可或缺的亲子拓展、寒暑假种类繁多的夏令营；生存挑战、职业探险、灾难自救、运动亲子、感恩公益童年一去不复返，孩童时光是人生最好的一次成长，而最好的教育莫过于陪伴!每周不间断的户外活动、小长假不可或缺的亲子拓展、寒暑假种类繁多的夏令营；生存挑战、职业探险、灾难自救、运动亲子、感恩公益…全年千余场的自营活动，给孩子一个专陪伴的童年"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"/>
+
+            <include layout="@layout/view20background"/>
+
+            <include layout="@layout/view20background"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="130px"
+                android:layout_marginLeft="30px"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="全部评价(666)"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:src="@mipmap/right"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_city_road_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_label"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_city_road_enrollment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/colorbackground"
+            android:gravity="center"
+            android:text="286人已报名"
+            android:textColor="@color/colorred"
+            />
+
+        <TextView
+            android:id="@+id/tv_city_road_i_want_to_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorblue"
+            android:gravity="center"
+            android:text="我要报名"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

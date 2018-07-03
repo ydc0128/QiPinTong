@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+    <!--Description:创投天下合伙人的详情页面 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="160px"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="530px"
+                android:background="@mipmap/background"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fl_ogether_project_details_icon"
+                    android:layout_width="240px"
+                    android:layout_height="240px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+
+                    >
+
+                    <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+                        android:id="@+id/civ_together_project_details_icon"
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_together_project_details_vip"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="10px"
+                        android:layout_marginRight="10px"
+                        android:src="@mipmap/vip_yellow"
+                        />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/fl_ogether_project_details_icon"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginTop="20px"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/civ_together_project_details_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="韩雪冬"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/tv_together_project_details_industry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="餐饮业"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="10px"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="寻求加盟"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="10px"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="投资额 : "
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_together_project_details_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="50W"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="个人信息 :   "
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_together_project_details_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="23岁"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+
+                            <View
+                                android:layout_width="3px"
+                                android:layout_height="40px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:background="@color/colorWhite"
+                                />
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/qpt_map_image"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_together_project_details_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10px"
+                                android:text="杭州"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="个人简介"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_together_project_details_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="40px"
+                android:lineSpacingExtra="10px"
+                android:text="　诗曰：混沌未分天地乱，茫茫渺渺无人见。自从盘古破鸿蒙，开辟从兹清浊辨。
+　　覆载群生仰至仁，发明万物皆成善。欲知造化会元功，须看西游释厄传。
+　　盖闻天地之数，有十二万九千六百岁为一元。将一元分为十二会，乃子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥之十二支也。每会该一万八百岁。且就一日而论：子时得阳气，而丑则鸡鸣；寅不通光，而卯则日出；辰时食后，而巳则挨排；日午天中，而未则西蹉；申时晡而日落酉，戌黄昏而人定亥。譬于大数，若到戌会之终，则天地昏缯而万物否矣。"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="合伙期望"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_together_project_details_cooperation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="40px"
+                android:lineSpacingExtra="10px"
+                android:text="寻求志同道合人士 , 携手共赢天下"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <include layout="@layout/view15background"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/colorbackground"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/bottom_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:创投天下 投资人详情 投资偏好条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <TextView
+        android:id="@+id/tv_item_give_money_person_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关注领域"
+        android:textColor="@color/colormuchgray"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_give_money_person_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17px"
+        android:layout_marginTop="12px"
+        android:text="年初的时候，做一些重要但不紧急的事，中间默默坚持，控制装逼欲，闷声发大财，年底出成绩"
+        android:textColor="@color/colortitletext"
+        android:textSize="14sp"
+        />
+
+
+</LinearLayout>

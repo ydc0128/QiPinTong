@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:创投天下 投资机构详情 投资人条目-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/iv_give_money_company_icon"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_6"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="215px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_give_money_people_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:text="任星星"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_give_money_people_vip"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/tv_give_money_people_name"
+                    android:src="@mipmap/vip_yellow"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_give_money_people_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="middle"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="银奖资本 , 投资经理"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="领域 : "
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_give_money_people_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="健康管理 , 医疗平台"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="阶段 : "
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_give_money_people_jieduan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="天使轮"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view15background"/>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:text="币斗规则"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.用户可将钱包通币转入币斗，10个通币起；"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorBlack"
+    android:textSize="@dimen/sp_14"
+    android:text="2.用户可在币斗里直接充值购买通币，币斗里的通币收益按天结算（24小时）；"
+    android:layout_marginBottom="50px"
+    android:layout_marginTop="50px"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="3.通币的收益按照存入的数量或购买的数量及时进行计算收益比率（如1000个通币最高每月收益≥80个）；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        />
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="4.转入或购买的通币在币斗中必须满7个工作日后可随意转出；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="5.所有解释权归企聘通公司所有"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <Button
+        android:id="@+id/bt_queding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:text="确定"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"/>
+</LinearLayout>

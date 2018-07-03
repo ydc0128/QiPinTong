@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:首页全职速聘的条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_face_money_icon"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qptheader"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="290px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_face_money_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="中级UI设计师"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_face_money_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="5-8K"
+                    android:textColor="@color/colororange"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_face_money_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="传徳纳惠实业有限公司"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_face_money_vip"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="50px"
+                    android:layout_toRightOf="@+id/tv_face_money_company"
+                    android:src="@mipmap/vip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_face_money_shangshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="已上市"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/Vv_l"
+                    android:layout_width="2px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5px"
+                    android:layout_toLeftOf="@+id/tv_face_money_shangshi"
+                    android:background="@color/colormuchgray"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_face_money_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5px"
+                    android:layout_toLeftOf="@+id/Vv_l"
+                    android:text="IT软件"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_face_money_small_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="最低学历 : "
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_face_money_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_face_money_small_education"
+                    android:text="本科"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_face_money_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:layout_toRightOf="@+id/tv_face_money_education"
+                    android:text="工作经验 : "
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_face_money_experience_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/tv_face_money_experience"
+                    android:text="3-5年"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_face_money_didian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="工作地点 : "
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_face_money_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_face_money_didian"
+                    android:text="西安高新区I都会"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include
+
+        layout="@layout/view15background"
+
+        />
+
+</LinearLayout>

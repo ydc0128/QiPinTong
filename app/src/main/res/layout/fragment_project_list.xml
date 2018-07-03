@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--Description:创投天下好项目列表 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <include layout="@layout/refresh_head"/>
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:id="@+id/OSV_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/bb_list_project"
+                android:layout_width="match_parent"
+                android:layout_height="380px"
+                ></com.youth.banner.Banner>
+
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <LinearLayout
+                android:id="@+id/ll_list_project_select"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@drawable/lin_border"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll_list_project_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="区域"
+                            android:textColor="@color/colorgray"
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="45px"
+                            android:layout_height="45px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5px"
+                            android:src="@mipmap/arrows_down"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorlinegray"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll_list_project_territory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="领域"
+                            android:textColor="@color/colorgray"
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="45px"
+                            android:layout_height="45px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5px"
+                            android:src="@mipmap/arrows_down"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorlinegray"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll_list_project_round"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="轮次"
+                            android:textColor="@color/colorgray"
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="45px"
+                            android:layout_height="45px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5px"
+                            android:src="@mipmap/arrows_down"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorlinegray"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll_list_project_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="额度"
+                            android:textColor="@color/colorgray"
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="45px"
+                            android:layout_height="45px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5px"
+                            android:src="@mipmap/arrows_down"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorlinegray"
+                    />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="110px"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_list_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more"/>
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

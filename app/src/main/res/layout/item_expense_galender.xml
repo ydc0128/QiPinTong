@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="50px">
+    <LinearLayout
+        android:id="@+id/rl_expense_galender_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50px"
+        android:paddingRight="250px"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:id="@+id/tv_expense_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周三"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_balance_add_no"
+            android:text="10-26"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rl_ecpence_galend"
+        android:layout_width="440px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50px"
+        android:layout_toRightOf="@+id/rl_expense_galender_time"
+        >
+    <TextView
+        android:id="@+id/tv_expense_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="-20"
+        android:paddingLeft="50px"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_expense_aglender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="充值：¥ 20"
+
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_expense_add_tongbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兑换通币200个"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="30px"
+        />
+       </RelativeLayout>
+    <include layout="@layout/viewlinbackground"/>
+</LinearLayout>

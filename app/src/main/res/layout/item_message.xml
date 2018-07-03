@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:消息列表条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:orientation="horizontal"
+        >
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+            android:id="@+id/CIV_message_icon"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_message_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="苗子YoYo"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="11:47"
+                    android:textColor="@color/colorgray"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_message_body"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="详情页在哪里"
+                android:textColor="@color/colorgray"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+
+</LinearLayout>

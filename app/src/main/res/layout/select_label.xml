@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <!--  <LinearLayout
+          android:id="@+id/ll_commerce_select"
+          android:layout_width="match_parent"
+          android:layout_height="133px"
+          android:orientation="vertical"
+          >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="130px"
+              android:background="@color/colorWhite"
+              android:orientation="horizontal"
+              >
+
+              <RelativeLayout
+                  android:id="@+id/rl_select_meishi"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1">
+
+                  <LinearLayout
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:orientation="horizontal"
+                      >
+
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:text="全部美食"
+                          android:textColor="@color/colorgray"
+                          android:textSize="14sp"/>
+
+
+                      <ImageView
+                          android:layout_width="40px"
+                          android:layout_height="40px"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="20px"
+                          android:src="@mipmap/down"
+                          />
+
+
+                  </LinearLayout>
+
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/rl_select_fujin"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:orientation="horizontal"
+                      >
+
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:text="附近"
+                          android:textColor="@color/colorgray"
+                          android:textSize="14sp"/>
+
+                      <ImageView
+                          android:layout_width="40px"
+                          android:layout_height="40px"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="20px"
+                          android:src="@mipmap/down"
+                          />
+
+
+                  </LinearLayout>
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:id="@+id/rl_select_paixu"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:orientation="horizontal"
+                      >
+
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:text="智能排序"
+                          android:textColor="@color/colorgray"
+                          android:textSize="14sp"/>
+
+                      <ImageView
+                          android:layout_width="40px"
+                          android:layout_height="40px"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="20px"
+                          android:src="@mipmap/down"
+                          />
+
+
+                  </LinearLayout>
+
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                  android:id="@+id/rl_select_shaixuan"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:orientation="horizontal"
+                      >
+
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:text="筛选"
+                          android:textColor="@color/colorgray"
+                          android:textSize="14sp"/>
+
+                      <ImageView
+                          android:layout_width="40px"
+                          android:layout_height="40px"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="20px"
+                          android:src="@mipmap/down"
+                          />
+
+
+                  </LinearLayout>
+
+
+              </RelativeLayout>
+          </LinearLayout>
+
+          <include layout="@layout/view1background"/>
+      </LinearLayout>-->
+
+
+    <com.yyydjk.library.DropDownMenu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/gray"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/colorWhite"
+        app:ddmenuSelectedIcon="@mipmap/arrows_top"
+        app:ddmenuTextSize="14sp"
+        app:ddmenuUnselectedIcon="@mipmap/arrows_down"
+        app:ddtextSelectedColor="@color/colorfont"
+        app:ddtextUnselectedColor="@color/colorgray"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+</LinearLayout>

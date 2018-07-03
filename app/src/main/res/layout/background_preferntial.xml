@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通币抵扣"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请填写（通币个数)"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:gravity="right"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通币抵扣"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请填写（通币个数)"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通币抵扣"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请填写（通币个数)"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="150px"
+        android:layout_marginBottom="150px">
+        <Button
+            android:id="@+id/bt_preferntial_baocun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_blue"
+            android:textColor="@color/colorWhite"
+            android:text="确 定"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</LinearLayout>

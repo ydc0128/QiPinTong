@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--Description:首页弹窗询问是否允许访问地址 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <RelativeLayout
+        android:layout_width="840px"
+        android:layout_height="450px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bottom_dialog_bg_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="130px"
+            android:lineSpacingMultiplier="2"
+            android:text="允许获取您当前位置吗 ?"
+            android:textColor="@color/colortitletext"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40px"
+            >
+
+            <TextView
+                android:id="@+id/tv_dialog_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80px"
+                android:layout_toLeftOf="@+id/tv_dialog_yes"
+                android:text="取消"
+                android:textColor="@color/colorgray"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_dialog_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:text="确定"
+                android:textColor="@color/colorfont"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

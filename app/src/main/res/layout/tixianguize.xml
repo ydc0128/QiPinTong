@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:text="提现规则"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.开通体现功能需充值20元，体现最高额度5元/天；"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="2.币斗通币数量达500个或以上，7个工作日后，最高额度10元/天；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="3.币斗通币数量达1000个或以上，7个工作日后，最高额度500元/天；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        />
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="4.币斗通币数量达10000个或以上，7个工作日后，最高额度3000元/天；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="5.所有解释权归企聘通公司所有"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <Button
+        android:id="@+id/bt_tixian_queding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:text="确定"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"/>
+</LinearLayout>

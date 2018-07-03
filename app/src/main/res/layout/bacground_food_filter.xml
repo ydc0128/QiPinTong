@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:paddingTop="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:background="@color/colorblue">
+        <ImageView
+            android:id="@+id/food_filter_no"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@mipmap/back_left"/>
+        <ImageView
+            android:id="@+id/food_filter_yes"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@mipmap/add"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/Filter_food_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:paddingBottom="10px">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人均消费"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/Filter_food_consume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:paddingBottom="10px">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/Filter_food_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:paddingBottom="10px">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+    </LinearLayout>
+</LinearLayout>

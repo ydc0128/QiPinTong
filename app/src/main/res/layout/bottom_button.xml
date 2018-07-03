@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:多个详情页的按钮-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_attention"
+                android:layout_width="320px"
+                android:layout_height="80px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_blue">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/attention"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5px"
+                        android:text="加关注"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_friend"
+                android:layout_width="320px"
+                android:layout_height="80px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_green">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/friend"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5px"
+                        android:text="加好友"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_consult"
+                android:layout_width="320px"
+                android:layout_height="80px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_orange">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/consult"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_project_ziuxn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5px"
+                        android:text="立即咨询"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

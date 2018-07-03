@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--编辑简历——合伙人资料-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:text="合伙人资料"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@color/colorblue"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30px"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/iv_my_data_partner_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@mipmap/back"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/viewlinbackground"/>
+    <include layout="@layout/viewlinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="50px"
+        android:paddingLeft="50px">
+        <LinearLayout
+            android:id="@+id/ll_my_data_partner_territory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            >
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资领域"
+                    android:textColor="@color/colorBlack"
+                  android:textSize="@dimen/sp_16"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"/>
+
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:gravity="right"
+                    android:id="@+id/editText" />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/finelinbackground"/>
+        <LinearLayout
+            android:id="@+id/ll_my_data_partner_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            >
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资区域"
+                    android:textColor="@color/colorBlack"
+                   android:textSize="@dimen/sp_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"/>
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:gravity="right"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/finelinbackground"/>
+        <LinearLayout
+            android:id="@+id/ll_my_data_partner_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            >
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合作方式"
+                    android:textColor="@color/colorBlack"
+                  android:textSize="@dimen/sp_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"/>
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:gravity="right"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/finelinbackground"/>
+        <LinearLayout
+            android:id="@+id/ll_my_data_partner_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            >
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资额度"
+                    android:textColor="@color/colorBlack"
+                   android:textSize="@dimen/sp_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"/>
+                <EditText
+                    android:id="@+id/et_partner_mold_choice"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:gravity="right"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground"/>
+        <LinearLayout
+            android:id="@+id/ll_my_data_partner_personage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            >
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人简介"
+                    android:textColor="@color/colorBlack"
+                  android:textSize="@dimen/sp_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"/>
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:gravity="right"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/finelinbackground"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_my_data_partner_cooperation_expected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            >
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合作期望"
+                    android:textColor="@color/colorBlack"
+                  android:textSize="@dimen/sp_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"/>
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:gravity="right"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/finelinbackground"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50px">
+        <Button
+            android:id="@+id/bt_my_data_partner_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblue"
+            android:text="申请"
+            android:textColor="@color/colorWhite"
+          android:textSize="@dimen/sp_16"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--同城路演评论-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            >
+
+            <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+                android:id="@+id/iv_city_road_head_portrait"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/iv_city_road_head_portrait"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_my_Companies_hire_tong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_my_Do_not_disturb"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5px"
+                    android:text="sinmonwen"/>
+
+                <TextView
+                    android:id="@+id/tv_my_Do_not_disturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="2016-11-21 19:00"
+                    android:textColor="@color/colorgray"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30px">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/zan"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="25"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="30px"
+            android:lineSpacingExtra="10sp"
+            android:text="谢谢老师，很专业，很有收获，必要时会在咨询！"/>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+
+    <include layout="@layout/finelinbackground"/>
+</LinearLayout>
+
+

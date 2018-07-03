@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--编辑简历——工作经历-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:text="工作经历"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@color/colorblue"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30px"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/rl_my_data_work_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@mipmap/back"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rl_my_data_work_tianjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30px"
+        android:paddingBottom="30px">
+        <TextView
+            android:id="@+id/my_data_work_tianjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+添加"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorimagegray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px">
+        <Button
+            android:id="@+id/rl_my_data_work_back_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblue"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</LinearLayout>

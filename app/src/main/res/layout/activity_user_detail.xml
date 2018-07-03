@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seal_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/group_info"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.example.qipintongzhongguozongbu.myqipintong.rongyun.im.server.widget.SelectableRoundedImageView
+            android:id="@+id/ac_iv_user_portrait"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="3dip"
+            app:sriv_left_top_corner_radius="3dip"
+            app:sriv_right_bottom_corner_radius="3dip"
+            app:sriv_right_top_corner_radius="3dip"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_aud_remark_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菲利克斯"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_16"/>
+    <ImageView
+        android:id="@+id/iv_aud_gender"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:src="@mipmap/nan"
+        android:layout_marginLeft="30px"/>
+</LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="账号"
+                  android:textSize="@dimen/dp_14"/>
+              <TextView
+                  android:id="@+id/tv_aud_AccountNumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="123@123"
+                  android:textSize="@dimen/dp_14"
+                  android:layout_marginLeft="30px"/>
+          </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:textSize="@dimen/dp_14"/>
+    <TextView
+        android:id="@+id/tv_aud_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="战神-陈庆之"/>
+</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ac_ll_note_name"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setDisplayName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="@string/setdisplayname"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="80px"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地区"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/tv_aud_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陕西 西安"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="50px"
+            />
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人相册"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorBlack"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_aud_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ac_ll_chat_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/contact_start_chat"
+            android:onClick="startChat"
+            android:text="@string/start_chat"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <!--CallKit start-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/contact_start_video"
+            android:onClick="startVoice"
+            android:text="@string/start_voice"
+            android:textColor="#363636"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/contact_start_video"
+            android:onClick="startVideo"
+            android:text="@string/start_video"
+            android:textColor="#363636"
+            android:textSize="16sp" />
+        <!--CallKit end-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ac_bt_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/contact_start_chat"
+        android:text="@string/add_friend"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

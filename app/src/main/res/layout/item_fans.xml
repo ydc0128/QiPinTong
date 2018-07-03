@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="50px"
+    android:layout_marginTop="50px">
+    <ImageView
+        android:id="@+id/iv_fans_photo"
+        android:layout_width="340px"
+        android:layout_height="220px"
+        android:src="@mipmap/mtwm"
+        android:scaleType="centerCrop"
+        android:background="@drawable/shape_image"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="200px"
+    android:orientation="vertical"
+    android:layout_marginLeft="50px">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0px">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美团外卖"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浙江"
+        android:textSize="@dimen/sp_14"
+       />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杭州"
+            android:textSize="@dimen/sp_14"
+            />
+        </LinearLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200px">
+    <ImageView
+        android:id="@+id/iv_item_fans_tianjia"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginRight="100px"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/fensi_tianjia"
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+</LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                          android:id="@+id/rf_tongbi"
+                                                                          android:layout_width="match_parent"
+                                                                          android:layout_height="match_parent"
+                                                                          android:orientation="vertical">
+
+    <include layout="@layout/refresh_head"/>
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/rob_tongbi_iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="455px"
+                android:src="@drawable/image_6"/>
+
+            <LinearLayout
+                android:id="@+id/ll_rob_tongbi_button"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rv_rob_tongbi_button_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_rob_tongbi_qiangtongbi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140px"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#00000000"
+                        android:text="抢通币"
+                        android:textColor="#f42d29"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rv_rob_tongbi_button_qiangyouhuij"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_rob_tongbi_qiangyouhuij"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140px"
+                        android:layout_centerHorizontal="true"
+                        android:background="#00000000"
+                        android:text="代金券"
+                        android:textSize="16sp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_rob_tongbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_rob_huij_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60px"/>
+        </LinearLayout>
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more"/>
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

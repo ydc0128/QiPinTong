@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50px"
+    android:layout_marginRight="50px"
+    android:layout_marginLeft="50px">
+    <TextView
+        android:id="@+id/tv_it_gongsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西部集团"
+        android:textSize="@dimen/sp_16"
+        />
+    <TextView
+        android:id="@+id/tv_it_kaishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000.01.01"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="50px"/>
+    <TextView
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="@dimen/sp_16"
+       />
+
+    <TextView
+        android:id="@+id/tv_it_jieshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.01.0"
+        android:textSize="@dimen/sp_16"
+        />
+    <TextView
+        android:id="@+id/tv_it_zhiwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运行经理"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="50px"/>
+</LinearLayout>
+</LinearLayout>

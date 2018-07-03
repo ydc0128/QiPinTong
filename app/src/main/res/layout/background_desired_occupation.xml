@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <!--职位管理-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="140px"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="@color/colorblue"-->
+    <!--android:paddingLeft="50px"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/bt_desired_occupation_back"-->
+    <!--android:layout_width="60px"-->
+    <!--android:layout_height="60px"-->
+    <!--android:background="@mipmap/back"-->
+    <!--android:layout_gravity="center_vertical"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="140px"-->
+    <!--android:text="期望职位"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:gravity="center"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:layout_marginTop="100px">
+
+        <Button
+            android:id="@+id/bt_desired_occupation_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="+添加期望职位"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:background="@drawable/shape_blue"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground" />
+</LinearLayout>

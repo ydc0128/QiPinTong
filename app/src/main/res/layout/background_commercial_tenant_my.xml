@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <!--Description:我的界面布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_commercial_tenant_title"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@mipmap/mohubeijing"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="50px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+
+                        android:id="@+id/commercial_tenant_p"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:layout_marginLeft="50px"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_my_commercial_tenant_Companies_nicheng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv_my_Do_not_disturb"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10px"
+                            android:text="Box Hill 旗舰店"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/commercial_tenant_ib_qiehuan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="状态切换"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_my_commercial_tenant_Edit_your_resume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginRight="50px"
+                    android:text="编辑"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_commercial_tenant_my_data"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_commercial_tenant_my_The_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10px"
+                            android:text="0"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="投地记录"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_commercial_tenant_my_nterview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10px"
+                            android:text="0"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="待面试"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_commercial_tenant_my_collection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10px"
+                            android:text="0"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收藏"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_commercial_tenant_my_fans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10px"
+                            android:text="0"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<include layout="@layout/viewlinbackground"/>-->
+            <!--<include layout="@layout/viewlinbackground"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_button_PMS"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="280px"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/tv_my_pms"-->
+            <!--android:layout_width="75px"-->
+            <!--android:layout_height="65px"-->
+            <!--android:background="@drawable/pms"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_my_pms"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="PMS"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="10px"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<include layout="@layout/link_h"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_button_my_darenbang_my"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="280px"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/tv_my_darenbang_my"-->
+            <!--android:layout_width="75px"-->
+            <!--android:layout_height="65px"-->
+            <!--android:background="@drawable/running_errands"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_my_darenbang_my"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="达人邦"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="10px"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<include layout="@layout/link_h"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_button_youcaiyoumao"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="280px"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/tv_my_youcaiyoumao"-->
+            <!--android:layout_width="75px"-->
+            <!--android:layout_height="65px"-->
+            <!--android:background="@drawable/star_electronic_retailing"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_my_youcaiyoumao"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="有才有貌"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="10px"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<include layout="@layout/finelinbackground"/>-->
+            <!--<include layout="@layout/finelinbackground"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_button_my_jiazhangjie"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="280px"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/tv_my_jiazhangjie"-->
+            <!--android:layout_width="75px"-->
+            <!--android:layout_height="65px"-->
+            <!--android:background="@drawable/patriarch"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_my_jiazhangjie"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="家长界"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="10px"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<include layout="@layout/link_h"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_button_my_qiangtongbi_my"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="280px"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/tv_my_qiangtongbi_my"-->
+            <!--android:layout_width="75px"-->
+            <!--android:layout_height="65px"-->
+            <!--android:background="@drawable/gold"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_my_qiangtongbi_my"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="抢通币"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="10px"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<include layout="@layout/link_h"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_button_my_woyaochuangye_my"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="280px"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/tv_my_woyaochuangye_my"-->
+            <!--android:layout_width="75px"-->
+            <!--android:layout_height="65px"-->
+            <!--android:background="@drawable/team"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_my_woyaochuangye_my"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="我要创业"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="10px"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <include layout="@layout/viewlinbackground" />
+
+            <include layout="@layout/viewlinbackground" />
+
+            <LinearLayout
+                android:id="@+id/lv_my_commercial_tenant_account"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+                    android:src="@mipmap/qianbao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="账户"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/arrows" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground" />
+
+            <LinearLayout
+                android:id="@+id/lv_commercial_tenant_erweima"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+                    android:src="@mipmap/erweima" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="收款功能"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="45px"
+                        android:background="@mipmap/arrows" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/viewlinbackground" />
+
+            <include layout="@layout/viewlinbackground" />
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/lv_commercial_tenant_fa_tongbi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140px"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="80px"-->
+                    <!--android:layout_height="80px"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="45px"-->
+                    <!--android:src="@mipmap/bidou" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="30px"-->
+                    <!--android:text="发通币"-->
+                    <!--android:textColor="@color/colorBlack"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="140px"-->
+                    <!--android:layout_marginRight="50px"-->
+                    <!--android:gravity="right"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="40px"-->
+                        <!--android:layout_height="40px"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@mipmap/arrows" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/finelinbackground" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/lv_my_commercial_tenant_youhuijuan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140px"-->
+                <!--android:orientation="horizontal"-->
+
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="80px"-->
+                    <!--android:layout_height="80px"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="45px"-->
+                    <!--android:src="@mipmap/htdaijinquanicon" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="30px"-->
+                    <!--android:text="代金劵"-->
+                    <!--android:textColor="@color/colorBlack"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="140px"-->
+                    <!--android:layout_marginRight="50px"-->
+                    <!--android:gravity="right"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="40px"-->
+                        <!--android:layout_height="40px"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@mipmap/arrows"-->
+
+                        <!--/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/viewlinbackground" />-->
+
+            <!--<include layout="@layout/viewlinbackground" />-->
+
+
+            <LinearLayout
+                android:id="@+id/lv_commercial_tenant_kehuziyuan"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+                    android:src="@mipmap/hr_home"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="客户库"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/arrows" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground" />
+
+            <LinearLayout
+                android:id="@+id/lv_commercial_tenant_my_darenbang"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+
+                    android:src="@mipmap/drbhticon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="共享达人帮"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/arrows" />
+                </LinearLayout>
+            </LinearLayout>
+<include layout="@layout/finelinbackground"/>
+            <LinearLayout
+                android:id="@+id/lv_commercial_tenant_my_jianliku"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+
+                    android:src="@mipmap/jianliku" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="简历库"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/arrows" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/viewlinbackground" />
+            <include layout="@layout/viewlinbackground" />
+            <LinearLayout
+                android:id="@+id/lv_commercial_tenant_my_qiehuan"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+
+                    android:src="@mipmap/qiehuansficon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="身份切换"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/arrows" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/viewlinbackground" />
+
+            <include layout="@layout/viewlinbackground" />
+
+
+            <LinearLayout
+                android:id="@+id/commercial_tenant_shezhi"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45px"
+                    android:src="@mipmap/shezhi"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="设置"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/arrows" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/colorbackgroundedittext"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

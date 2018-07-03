@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--sz-->
+    <include layout="@layout/view20background"/>
+
+    <LinearLayout
+        android:id="@+id/ll_s_u_amend_phone"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical">
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定手机号"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/arrows" />
+        </RelativeLayout>
+    </LinearLayout>
+<include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll_s_u_password"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical">
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置密码"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorBlack"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@mipmap/arrows"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll_s_u_zhifu"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical">
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置支付密码"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorBlack"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@mipmap/arrows"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll_s_u_guanyu"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical">
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorBlack"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@mipmap/arrows"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50px">
+        <Button
+            android:layout_marginTop="100px"
+            android:id="@+id/bt_s_u_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出登陆"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/shape_blue"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</LinearLayout>

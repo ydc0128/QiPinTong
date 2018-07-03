@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+    <!--Description:创投天下好项目的详情页面 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="160px"
+        android:scrollbars="none"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="530px"
+                android:background="@mipmap/background"
+                >
+
+                <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+                    android:id="@+id/iv_project_details_icon"
+                    android:layout_width="230px"
+                    android:layout_height="230px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+                    android:src="@drawable/icon"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/iv_project_details_icon"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginTop="20px"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_project_details_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="童漫秀"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_project_details_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="儿童动漫电影平台"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+
+
+                        <View
+                            android:id="@+id/vv_project_details"
+                            android:layout_width="2px"
+                            android:layout_height="40px"
+                            android:layout_centerInParent="true"
+                            android:background="@color/colorWhite"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_project_details_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10px"
+                            android:layout_toLeftOf="@+id/vv_project_details"
+                            android:text="已运营"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10px"
+                            android:layout_toRightOf="@+id/vv_project_details"
+                            android:src="@mipmap/qpt_map_image"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_project_details_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="60px"
+                            android:layout_toRightOf="@+id/vv_project_details"
+                            android:text="杭州"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:background="@drawable/rectangle_lin"
+                android:orientation="horizontal"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="融资轮次 : "
+                            android:textColor="@color/colorgray"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_project_details_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="天使轮"
+                            android:textColor="@color/colorgray"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorlinegray"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="融资金额 : "
+                            android:textColor="@color/colorgray"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_project_details_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="150W"
+                            android:textColor="@color/colorgray"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:padding="30px"
+                android:text="项目详情"
+                android:textColor="@color/colorgray"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_project_details_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:lineSpacingExtra="10px"
+                android:paddingBottom="30px"
+                android:text="太古十凶之所以被称为十凶，是因其身具奇异血脉足够强大都各自有底牌和本事，一旦逞凶不可抵挡，可力拼仙王又难杀死
+九幽獓：新十凶之首，头颅形似狼头，头有一双巨大而古朴的灰质牛角，眉心有竖眼。身上长满黑色鳞片，背生9尾，每条尾巴末端都生有1颗不算大的头颅形似龙头，后人为宇无敌，始祖为灭世老人（荒没击杀他前，他是所有纪元中最强的准仙帝，他一人就碾压其他九凶所有历代强者，真龙族在他面前如蝼蚁）
+真龙：原十凶之首，真龙族亦称为仙王之族，每头真龙成长到最后都会成为仙王，很多种族都可朝真龙进化，可即使数十条并存于世，最终往往也只有一条能夺得唯一真名。仙古年间有两条龙争夺龙之真名，失败者天下第二在天兽森林中养伤。有黑暗魔龙投靠异域（已被蛄祖斩杀），真龙遗子赤龙葛沽身处下界"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:paddingBottom="15px"
+                android:text="融资历史"
+                android:textColor="@color/colorgray"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_project_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:padding="30px"
+                android:text="项目标签"
+                android:textColor="@color/colorgray"
+                android:textSize="16sp"/>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/TFL_project_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:paddingBottom="10px"
+                >
+            </com.zhy.view.flowlayout.TagFlowLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/bottom_button"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view20background"/>
+    <include layout="@layout/view20background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:layout_marginRight="50px"
+        android:id="@+id/rl_my_data_desired_occupation"
+        >
+        <TextView
+            android:id="@+id/tvTest_zhiwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期望职位"
+            android:layout_marginLeft="50px"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+          android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <include layout="@layout/finelinbackground"/>
+
+    <include layout="@layout/finelinbackground"/>
+    <RelativeLayout
+        android:id="@+id/rl_jianli_bianji_youshi"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginRight="50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的优势"
+            android:layout_marginLeft="50px"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:background="@null"
+            android:hint=" "
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <include layout="@layout/view20background"/>
+    <include layout="@layout/view20background"/>
+
+    <LinearLayout
+        android:id="@+id/rl_my_data_f_work_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+添加工作经历"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorimagegray"
+            />
+    </LinearLayout>
+    <include layout="@layout/view20background"/>
+    <include layout="@layout/view20background"/>
+    <LinearLayout
+        android:id="@+id/rl_my_data_school_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+添加学习经历"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorimagegray"
+            />
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+
+    <include layout="@layout/finelinbackground"/>
+</LinearLayout>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <include layout="@layout/refresh_head"/>
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:id="@+id/sv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/bb_home"
+                android:layout_width="match_parent"
+                android:layout_height="475px"
+                ></com.youth.banner.Banner>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_home_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                ></android.support.v7.widget.RecyclerView>
+
+
+            <include layout="@layout/view20background"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250px">
+
+
+                <ImageView
+                    android:id="@+id/iv_home_money"
+                    android:layout_width="300px"
+                    android:layout_height="190px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/gold_select"
+                    android:scaleType="fitXY"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="60px"
+                    android:layout_toRightOf="@+id/iv_home_money"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="抢通币"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:text="免费兑换,可提现"
+                        android:textColor="@color/colormuchgray"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_home_take"
+                    android:layout_width="230px"
+                    android:layout_height="100px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:background="@mipmap/bt_image"
+                    android:text="抢取"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/view10background"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <ImageView
+                    android:id="@+id/iv_home_easy_school"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:src="@mipmap/easy_school"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_toLeftOf="@+id/iv_arrows"
+                    android:layout_toRightOf="@+id/iv_home_easy_school"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <com.example.qipintongzhongguozongbu.myqipintong.view.AutoVerticalScrollTextView
+                        android:id="@+id/avst_home_consult"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="30px"
+                        android:layout_weight="8"
+                        >
+                    </com.example.qipintongzhongguozongbu.myqipintong.view.AutoVerticalScrollTextView>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_arrows"
+                    android:layout_width="40px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/arrows"
+                    />
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/finelinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="505px"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="365px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="365px"
+                        >
+                    </android.support.v4.view.ViewPager>
+
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="30px"
+                        android:src="@mipmap/zhishiright"
+                        />
+
+                </FrameLayout>
+
+                <com.shizhefei.view.indicator.FixedIndicatorView
+                    android:id="@+id/fiv_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/vp_home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="45px"/>
+            </LinearLayout>
+
+
+            <include
+                layout="@layout/view15background"
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:layout_marginTop="55px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:gravity="center_horizontal"
+                android:text="有才有貌"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:text="有才又有貌 , 才貌双全让我们的人生更加精彩"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_home_face"
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="60px"
+                ></android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_home_face_show_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="查看更多"
+                        android:textColor="@color/colorgray"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="90px"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_home_face_show_more"
+                        android:src="@mipmap/arrows"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/view15background"
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:layout_marginTop="55px"/>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:gravity="center_horizontal"
+                android:text="名企在线"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:text="年薪百万不是梦 , 高薪职位等你来"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_home_company"
+                android:layout_width="wrap_content"
+                android:layout_height="600px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="60px"
+                ></android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px">
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="90px"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_home_company_show_more"
+                        android:src="@mipmap/arrows"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_home_company_show_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="查看更多"
+                        android:textColor="@color/colorgray"
+                        android:textSize="16sp"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <include
+                layout="@layout/view15background"
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:layout_marginTop="55px"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:gravity="center_horizontal"
+                android:text="全职速聘"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:text="企聘通*更轻松!好工作触手可及"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp"
+                />
+
+            <include layout="@layout/finelinbackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home_job_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false">
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@color/colorbackground"
+                >
+
+
+                <RelativeLayout
+                    android:layout_marginTop="30px"
+                    android:id="@+id/rl_home_Full_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="110px"
+                    android:background="@color/colorWhite">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="查看更多"
+                            android:textColor="@color/colormuchgray"
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="45px"
+                            android:layout_height="45px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15px"
+                            android:src="@mipmap/arrows"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more"/>
+
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <ImageView
+        android:id="@+id/iv_vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="380px"
+        android:background="@drawable/shape_image"
+        android:scaleType="fitXY"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:layout_gravity="bottom"
+        android:alpha="0.4"
+        android:background="@color/colorBlack"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="30px"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="没数据了吧"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        />
+</FrameLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:公司详情页职位的条目-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="40px"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tv_item_company_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="中级UI设计师"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_company_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="5-8k"
+                android:textColor="@color/colororange"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/acaimgae"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_company_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="本科"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100px"
+                    android:src="@mipmap/time_image"/>
+
+                <TextView
+                    android:id="@+id/tv_item_company_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5px"
+                    android:text="3年"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100px"
+                    android:src="@mipmap/location"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_company_locations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="西安"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_item_company_see_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="3288"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/tv_item_company_see_number"
+                android:src="@drawable/eyeimage"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+
+        layout="@layout/view20background"
+
+        />
+
+</LinearLayout>

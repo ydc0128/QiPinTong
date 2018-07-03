@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:background="@color/colorlinegray">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学历"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/tv_dialog_ll_my_data_resume_education_background_close"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@color/black"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="初中"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="中技"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="高中"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="中专"
+    android:padding="30px"
+    android:textColor="@color/colorBlack"
+    android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大专"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本科"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="硕士"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_work_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MBA"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="博士"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_ll_my_data_resume_education_background_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+</LinearLayout>

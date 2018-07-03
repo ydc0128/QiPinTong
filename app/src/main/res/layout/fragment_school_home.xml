@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rf_school_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--Description: 校园365的主页 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <include layout="@layout/refresh_head"/>
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/bb_school"
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                ></com.youth.banner.Banner>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/school_cap"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="95px"
+                    android:text="校聘通 , 兼职无忧"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="14sp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_school_take"
+                    android:layout_width="270px"
+                    android:layout_height="80px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_button_school"
+                    android:text="我要加入"
+                    android:textColor="#87978B"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320px"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_school_time_job"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45px"
+                        android:src="@mipmap/job_time"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="60px"
+                        android:text="学生兼职"
+                        android:textColor="@color/colortextgray"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_school_study"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45px"
+                        android:src="@mipmap/study"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="60px"
+                        android:text="我要实习"
+                        android:textColor="@color/colortextgray"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_school_work"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45px"
+                        android:src="@mipmap/work"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="60px"
+                        android:text="就业指南"
+                        android:textColor="@color/colortextgray"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210px">
+
+                <TextView
+                    android:id="@+id/tv_school_recruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:text="校招专场"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+
+
+                <View
+                    android:layout_width="75px"
+                    android:layout_height="3px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130px"
+                    android:background="@color/colorBlack"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_school"
+                android:layout_width="match_parent"
+                android:layout_height="430px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="@color/colorBlack">
+            </android.support.v4.view.ViewPager>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110px">
+
+                <com.shizhefei.view.indicator.FixedIndicatorView
+                    android:id="@+id/fiv_school_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/CTL_school"
+                    android:layout_width="540px"
+                    android:layout_height="130px"
+                    android:layout_centerInParent="true"
+                    app:tl_indicator_bounce_enable="true"
+                    app:tl_indicator_color="@color/colorblue"
+                    app:tl_indicator_height="1dp"
+                    app:tl_indicator_width="200px"
+                    app:tl_textSelectColor="@color/colorblue"
+                    app:tl_textUnselectColor="@color/colortitletext"
+                    app:tl_textsize="14sp"
+                    >
+                </com.flyco.tablayout.CommonTabLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_school_time_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false">
+                </android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_school_full_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:visibility="gone">
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120px"/>
+
+        </LinearLayout>
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more"/>
+
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_hehuoren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_n_hezuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            ></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_n_hehuoren"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerVertical="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:background="@color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/partnership"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="130px"
+                android:text="创业人缺的是合伙人脉"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_hehuoren_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_button_white"
+                android:paddingBottom="10px"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="10px"
+                android:text="立即加入"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

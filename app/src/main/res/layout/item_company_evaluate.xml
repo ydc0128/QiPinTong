@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:有才有貌公司详情页面试评论的列表 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        android:orientation="horizontal">
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+            android:id="@+id/civ_item_company_icon"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/icon"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="匿名"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="05月15日"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_item_comment_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="已面试 : "
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_comment_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_item_comment_state"
+                    android:text="用户运营"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <com.example.qipintongzhongguozongbu.myqipintong.ratingbar.MaterialRatingBar
+                    android:id="@+id/mrb_item_comment_star"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_width="260px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:progressDrawable="@drawable/barcolor"
+                    android:progressTint="#ff9817"
+                    android:rating="2.5"
+                    android:stepSize="0.1"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_comment_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:lineSpacingExtra="10px"
+        android:text="孩子不发脾气是不可能的, 但父母可以减少孩子发脾气的机会"
+        android:textColor="@color/colortextgray"
+        android:textSize="14sp"
+
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        >
+
+        <TextView
+            android:id="@+id/tv_item_comment_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="(5)"
+            android:textColor="@color/colorblue"
+            android:textSize="14sp"/>
+
+
+        <ImageView
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5px"
+            android:layout_toLeftOf="@+id/tv_item_comment_zan"
+            android:src="@mipmap/zan"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/finelinbackground"/>
+
+</LinearLayout>

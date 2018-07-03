@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:校园365 热门兼职的条目详情 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_school_job_time_icon"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/qptheader"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_school_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="中级UI设计师"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_school_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_label"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:paddingTop="10px"
+                    android:text="月结"
+                    android:textColor="@color/colorgreenly"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/tv_item_school_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15px"
+                    android:layout_toLeftOf="@+id/tv_item_school_tag"
+                    android:text="80元/天"
+                    android:textColor="@color/colororange"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_school_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="传徳纳惠实业有限公司"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_item_school_vip"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="50px"
+                    android:layout_toRightOf="@+id/tv_item_school_company"
+                    android:src="@mipmap/vip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_school_shangshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:text="已上市"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"/>
+
+                <View
+                    android:id="@+id/Vv_l"
+                    android:layout_width="2px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5px"
+                    android:layout_toLeftOf="@+id/tv_item_school_shangshi"
+                    android:background="@color/colormuchgray"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_school_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5px"
+                    android:layout_toLeftOf="@+id/Vv_l"
+                    android:text="IT软件"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+
+                <ImageView
+                    android:id="@+id/iv_item_school_friend"
+                    android:layout_width="25px"
+                    android:layout_height="25px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@+id/tv_item_school_education"
+                    android:background="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/tv_item_school_recruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/iv_item_school_friend"
+                    android:text="招聘人数 : "
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_school_person_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/tv_item_school_recruit"
+                    android:text="20"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_school_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_item_school_time"
+                    android:text="长期招聘"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_school_time"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_alignTop="@+id/iv_item_school_friend"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/time_image"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/location"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_school_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:text="西安高新区I都会"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_school_see_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="9527"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="10sp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5px"
+                    android:layout_toLeftOf="@+id/tv_item_school_see_number"
+                    android:src="@mipmap/eyeimage"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include
+
+        layout="@layout/viewlinbackground"
+
+        />
+
+</LinearLayout>

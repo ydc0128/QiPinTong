@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--Description:食物详情的页面 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/bb_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="450px"
+                    android:background="@color/colorgray">
+                </com.youth.banner.Banner>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="700px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="40px"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_food_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="鲜生活•喵小春的鱼"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/p"
+                            />
+
+                        <ImageView
+                            android:layout_width="55px"
+                            android:layout_height="55px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="80px"
+                            android:src="@mipmap/wifi"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <com.example.qipintongzhongguozongbu.myqipintong.ratingbar.MaterialRatingBar
+                            android:id="@+id/mrb_food_star"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:layout_width="330px"
+                            android:layout_height="60px"
+                            android:layout_centerVertical="true"
+                            android:progressDrawable="@drawable/barcolor"
+                            android:progressTint="#ff9817"
+                            android:rating="2.5"
+                            android:stepSize="0.1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_food_grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10px"
+                            android:layout_toRightOf="@+id/mrb_food_star"
+                            android:text="4.2分"
+                            android:textColor="@color/colororange"
+                            android:textSize="14sp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_food_CNY"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10px"
+                            android:text="¥ 39"
+                            android:textColor="@color/colorred"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_food_CNY"
+                            android:text="人均 : "
+                            android:textColor="@color/colorgray"
+                            android:textSize="14sp"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/tv_food_kind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15px"
+                            android:layout_toRightOf="@+id/tv_food_area"
+                            android:text="西餐"
+                            android:textColor="@color/colormuchgray"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_food_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_food_kind"
+                            android:layout_alignBottom="@+id/tv_food_kind"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="大雁塔"
+                            android:textColor="@color/colormuchgray"
+                            android:textSize="14sp"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/bt_food_convert"
+                        android:layout_width="310px"
+                        android:layout_height="110px"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="70px"
+                        android:background="@drawable/shape_orange"
+                        android:text="立即兑换"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/viewlinbackground"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:layout_margin="30px"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="45px"
+                        android:layout_height="45px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/location"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55px"
+                        android:text="10通币冲抵1元"
+                        android:textColor="@color/colortitletext"
+                        android:textSize="14sp"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="45px"
+                        android:layout_height="45px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/location"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55px"
+                        android:text="每满10减1(买单立享)"
+                        android:textColor="@color/colormuchgray"
+                        android:textSize="14sp"
+                        />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    >
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:src="@mipmap/location"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_food_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="260px"
+                        android:text="高新区高新路一品美道大厦美道城二层"
+                        android:textColor="@color/colorgray"
+                        android:textSize="14sp"
+                        />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="100px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="230px"
+                        android:background="@color/colorlinegray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_food_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:text="导航"
+                        android:textColor="@color/colormuchgray"
+                        android:textSize="16sp"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10px"
+                        android:layout_toLeftOf="@+id/tv_food_guide"
+                        android:src="@mipmap/guide"
+                        />
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/viewlinbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8px"
+                        android:src="@mipmap/phone"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_food_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="029 - 88888888"
+                        android:textColor="@color/colorgray"
+                        android:textSize="14sp"
+                        />
+
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/viewlinbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="55px"
+                        android:layout_height="55px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:src="@mipmap/home_false"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_food_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="http://mob.qipintong.com"
+                        android:textColor="@color/colorgray"
+                        android:textSize="14sp"
+                        />
+
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/viewlinbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+
+                <TextView
+                    android:id="@+id/tv_food_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="全部评论(66)"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrows"/>
+
+
+                <TextView
+                    android:id="@+id/tv_food_look_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:text="查看全部"
+                    android:textColor="@color/colorgray"
+                    android:textSize="16sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_food_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_marginLeft="30px"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/shop"
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="附近商家"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60px"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

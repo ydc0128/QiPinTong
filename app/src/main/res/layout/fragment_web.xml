@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--Description: web页面-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <WebView
+        android:id="@+id/wv_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_web"
+        ></WebView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_web"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorWhite"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_web_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginRight="15px"
+                android:src="@color/colorAccent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="评一下"
+                android:textColor="@color/colortextgray"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_web_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginRight="15px"
+                android:src="@mipmap/zan"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="3"
+                android:textColor="@color/colortextgray"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

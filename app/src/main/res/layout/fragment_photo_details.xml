@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+
+    android:orientation="vertical">
+    <!--Description:展示相片详情的页面-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.MyViewPager
+        android:id="@+id/mvp_photo_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.qipintongzhongguozongbu.myqipintong.view.MyViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100px">
+
+
+        <TextView
+            android:id="@+id/tv_xiegang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="/"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_photo_details_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/tv_xiegang"
+            android:text="8"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_photo_details_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/tv_xiegang"
+            android:text="8"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_photo_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="30px"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

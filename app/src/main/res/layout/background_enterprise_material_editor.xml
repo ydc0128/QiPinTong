@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+    <LinearLayout
+        android:id="@+id/enterprise_data"
+        android:layout_width="wrap_content"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基础资料"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@mipmap/arrows"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_eme_investment_institutions_data"
+        android:layout_width="wrap_content"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投资机构资料"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@mipmap/arrows"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+</LinearLayout>

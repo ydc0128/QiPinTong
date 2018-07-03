@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorblue">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="客户总量"
+                android:textSize="16sp"
+                android:layout_marginTop="50px"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                />
+            <TextView
+                android:id="@+id/the_number_of_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:layout_gravity="center_horizontal"
+                />
+
+                <include layout="@layout/link_h"/>
+            </LinearLayout>
+    <include layout="@layout/view20background"/>
+    <LinearLayout
+        android:id="@+id/ll_customer_today_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/jrxz"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:text="今日新增"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="50px"
+            android:layout_gravity="center_vertical"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/tv_customer_today_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50px"
+                />
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/arrows"
+                android:layout_gravity="center_vertical"
+               />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/view20background"/>
+
+    <LinearLayout
+        android:id="@+id/ll_customer_today_mingxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/kehu"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="客户明细"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16"
+            android:layout_gravity="center_vertical"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@mipmap/arrows"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/view20background"/>
+</LinearLayout>

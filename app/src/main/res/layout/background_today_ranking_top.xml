@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.bingoogolapple.refreshlayout.BGARefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_trt_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="100px"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:src="@mipmap/phb"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日排名"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_marginLeft="20px"/>
+            </LinearLayout>
+            <include layout="@layout/viewlinbackground"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_trt_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px" />
+        </LinearLayout>
+        </ScrollView>
+</cn.bingoogolapple.refreshlayout.BGARefreshLayout>

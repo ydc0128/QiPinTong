@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_team_shanghushiyebu"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/shanghu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="商户事业部"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_shanghushiyebu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground" />
+
+    <LinearLayout
+        android:id="@+id/ll_team_zhaopinshiyebu"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/arrows" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="招聘事业部"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_zhaopinshiyebu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground" />
+
+    <LinearLayout
+        android:id="@+id/ll_team_xiaozhaoshiyebu"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/arrows" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="校招事业部"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_xiaozhaoshiyebu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground" />
+
+    <LinearLayout
+        android:id="@+id/ll_team_yunyingguanlibu"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/arrows" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="运营管理部"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_yunyingguanlibu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground" />
+
+    <LinearLayout
+        android:id="@+id/ll_team_jishubu"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/arrows" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="技术部"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_jishubu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view20background" />
+
+    <include layout="@layout/view20background" />
+
+    <LinearLayout
+        android:id="@+id/ll_team_darenbang"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/drbhticon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="达人帮"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_darenbang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view20background" />
+
+    <include layout="@layout/view20background" />
+
+    <LinearLayout
+        android:id="@+id/ll_team_paihangbang"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/phb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="排行榜"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_team_paihangbang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_team_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新增部门"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_button_blue_qiye"/>
+</LinearLayout>

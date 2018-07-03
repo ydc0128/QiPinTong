@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <TextView
+        android:id="@+id/tv_dialog_select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorbackground"
+        android:paddingBottom="30px"
+        android:paddingLeft="200px"
+        android:paddingRight="200px"
+        android:paddingTop="30px"
+        android:text="更换相册封面"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

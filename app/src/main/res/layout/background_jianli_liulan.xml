@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px">
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.CircleImageView
+
+            android:id="@+id/my_jl_photo"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:layout_weight="0.1"
+            android:src="@drawable/icon" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250px"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30px">
+
+                <TextView
+                    android:id="@+id/tv_jl_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                    android:text="风之子"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/tv_jl_xingbei"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:src="@mipmap/nan"
+                    android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="求职状态:"
+                    android:textSize="@dimen/sp_16"/>
+                <TextView
+                    android:id="@+id/tv_jl_zhuangtai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/colorblue"
+                    android:text="离职-随时到岗"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30px">
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="80px"
+                   android:src="@mipmap/xueli"
+                    android:layout_gravity="center_vertical"/>
+<TextView
+    android:id="@+id/tv_jl_xueli"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="硕士"
+    android:textSize="@dimen/sp_16"
+    android:layout_gravity="center_vertical"/>
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:src="@mipmap/jingyan"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"/>
+                <TextView
+                    android:id="@+id/tv_jl_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3年"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_gravity="center_vertical"/>
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:src="@mipmap/dingwei"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"/>
+                <TextView
+                    android:id="@+id/tv_jl_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="西安"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50px"
+    android:orientation="vertical"
+    android:layout_marginTop="50px"
+    android:layout_marginBottom="50px">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基本信息"
+        android:textSize="18sp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邮箱:"
+        android:textSize="@dimen/sp_16"
+        />
+        <TextView
+            android:id="@+id/tv_jl_youxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="@dimen/sp_16"
+            android:text="windleave@sain.com"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄:"
+            android:textSize="@dimen/sp_16"/>
+        <TextView
+            android:id="@+id/tv_jl_nianliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="30"
+            android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="婚姻状况："
+            android:textSize="@dimen/sp_16"/>
+        <TextView
+            android:id="@+id/tv_jl_hunyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已婚"
+            android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+</LinearLayout>
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:orientation="vertical"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求职意向"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_jl_qiuzhiyixiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="希望找一份同财务相关的工作，工作地点不限。期望职位：教师 日语翻译 外贸 日常管理"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:orientation="vertical"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的优势"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_jl_youshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本人性格开朗、为人诚恳、乐观向上、兴趣广泛、拥有较强的组织能力和适应能力、并具有较强的管理策划与组织管理协调能力。"
+            android:layout_marginTop="20px"
+            android:textSize="16sp"
+            android:layout_marginBottom="20px"/>
+    </LinearLayout>
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作经历"
+            android:textSize="18sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_jl_gongzuojingyan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50px"
+            ></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教育经历"
+            android:textSize="16sp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_jl_jiaoyujingyan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50px"
+            ></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <include layout="@layout/view10background"/>
+    <include layout="@layout/view10background"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

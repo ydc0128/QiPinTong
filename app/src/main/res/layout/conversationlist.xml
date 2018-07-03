@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+    <RelativeLayout
+        android:id="@+id/publicceshi2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true">
+
+        <com.example.qipintongzhongguozongbu.myqipintong.rongyun.im.server.widget.SelectableRoundedImageView
+            android:id="@+id/iv_ceshi2"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/image_9"
+          />
+
+        <TextView
+            android:id="@+id/tv_servicebrand_ceshi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_ceshi2"
+            android:text="包大人不黑"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/conversationlist_fragment"
+        android:name="io.rong.imkit.fragment.ConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

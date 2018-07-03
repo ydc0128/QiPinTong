@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:首页有才有貌的条目详情 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <FrameLayout
+        android:layout_width="500px"
+        android:layout_height="500px">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_home_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mq_image"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="65px"
+            android:alpha="0.4"
+            android:background="@color/colorBlack"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_face"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="65px"
+            >
+
+            <TextView
+                android:id="@+id/tv_face_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="韩雪冬"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_face_vip"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_toRightOf="@+id/tv_face_name"
+                android:src="@mipmap/vip_yellow"
+                />
+
+            <TextView
+                android:id="@+id/tv_face_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:ellipsize="middle"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="UI设计师"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="500px"
+        android:layout_height="170px"
+        android:layout_marginTop="-65px"
+        android:background="@color/colorWhiteBack"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_face_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_toRightOf="@+id/iv_face_location"
+                android:text="西安"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/time_image"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_face_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:text="3年"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_face_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:text="本科"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_face_education"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5px"
+                android:layout_toLeftOf="@+id/tv_face_education"
+                android:src="@mipmap/acaimgae"
+                />
+
+            <ImageView
+                android:id="@+id/iv_face_location"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/location"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_face_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="5-8K"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_face_see_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:text="9527"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_face_eye"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5px"
+                android:layout_toLeftOf="@+id/tv_face_see_number"
+                android:src="@mipmap/eyeimage"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

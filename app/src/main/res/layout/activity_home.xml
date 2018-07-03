@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tl="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_home_activity">
+
+    <FrameLayout
+        android:id="@+id/fl_hometop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rv_home_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorbluebg"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_home_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:ellipsize="end"
+                android:maxEms="4"
+                android:singleLine="true"
+                android:text="西安"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                />
+
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35px"
+                android:layout_marginLeft="15px"
+                android:layout_toRightOf="@id/tv_home_city"
+                android:src="@mipmap/arrows_right_down"
+                />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="80px"
+                android:layout_marginRight="120px"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@id/tv_home_city">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/arc_background"
+                    android:cursorVisible="false"
+                    android:hint="                 工作/人才/企业/项目/合伙人/"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:layout_width="65px"
+                    android:layout_height="65px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:src="@mipmap/search_greny"/>
+
+                <View
+                    android:id="@+id/vv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_home_scan"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/scan"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_hometop"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="@color/colorbluebg"
+            >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/back_left"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="首页"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/iv_home_camera"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/camera_icon"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_xiaoxi_top"
+            android:layout_width="wrap_content"
+            android:layout_height="125px"
+            android:layout_alignParentTop="true"
+            android:background="#0195ff"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_top_txl"
+                android:text="消息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                />
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                >
+                <ImageView
+                    android:id="@+id/ac_iv_search"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/ac_title_search_icon"/>
+                <ImageView
+                    android:id="@+id/seal_more"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/main_activity_add" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:layout_alignParentBottom="true"
+        android:background="#FCFCFC"
+        tl:tl_iconHeight="23dp"
+        tl:tl_iconWidth="23dp"
+        tl:tl_indicator_color="#2C97DE"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="#2C97DE"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_textsize="14sp"
+        tl:tl_underline_color="#FCFCFC"
+        android:visibility="gone"
+        tl:tl_underline_height="1dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_button"
+        android:layout_below="@id/fl_hometop"/>
+
+</RelativeLayout>

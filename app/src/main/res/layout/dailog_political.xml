@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:background="@color/colorlinegray">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="政治面貌"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/tv_dialog_identity_political_back"
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:background="@mipmap/arrows"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_dialog_ipolitical_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="中共党员"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_political_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="团员"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_political_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="民主党派"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_identity_category_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="无党派人士"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+
+</LinearLayout>

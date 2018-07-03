@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--Description:新版发现页面 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_friend"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:src="@mipmap/pengicon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="朋友动态"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_pms"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:src="@mipmap/htpms"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="PMS"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:src="@mipmap/fujinicon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="附近"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+
+                />
+        </LinearLayout>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:src="@mipmap/jiazhangicon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="家长界"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_take_gold"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:src="@mipmap/fxtongbi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="抢通币"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_school"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:src="@mipmap/yitongicon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="易通学院"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground"/>
+
+
+        <include layout="@layout/finelinbackground"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB"
+            />
+    </LinearLayout>
+</LinearLayout>

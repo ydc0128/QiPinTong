@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--生育状态-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:background="@color/colorlinegray">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生育状态"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/tv_dialog_give_birth_to_back"
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:background="@mipmap/arrows"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_dialog_give_birth_to_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未育"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_give_birth_to_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一胎"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_give_birth_to_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="二胎"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:id="@+id/tv_dialog_give_birth_to_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:padding="30px"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <include layout="@layout/finelinbackground"/>
+
+</LinearLayout>

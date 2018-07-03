@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_cretworld_database"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:创投天下的同城路演条目 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:background="@drawable/shape_image"
+            android:id="@+id/iv_item_create_icon"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/leader"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_item_create_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_create_bottom"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="7px"
+                android:maxLines="3"
+                android:text="奋斗大讲堂之中信出版社卢俊 : '匠人精神月商业社会' "
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_create_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10px"
+                >
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/location"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_create_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="45px"
+                    android:text="杭州"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@+id/tv_item_create_location"
+                    android:src="@mipmap/time_image"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="95px"
+                    android:layout_toRightOf="@+id/tv_item_create_location"
+                    android:text="11月10日"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_create_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@+id/tv_item_create_time"
+                    android:singleLine="true"
+                    android:text="已报名40项目"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="主办方 : "
+            android:textColor="@color/colormuchgray"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_create_dispose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="华为企业云, 赛福互联网金融孵化器, Opark创业中国"
+            android:textColor="@color/colormuchgray"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view15background"/>
+
+</LinearLayout>

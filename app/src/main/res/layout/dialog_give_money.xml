@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--Description:打赏的弹窗页面布局 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <FrameLayout
+        android:layout_width="850px"
+        android:layout_height="750px"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/give_bg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/ll_dialog_icon"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginTop="90px"
+                android:orientation="horizontal"
+                >
+            </RelativeLayout>
+
+            <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+                android:id="@+id/iv_dialog_icon"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iv_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_dialog_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="30px"
+                android:text="小柴柴"
+                android:textColor="@color/colorfriendtext"
+                />
+
+            <ImageView
+                android:id="@+id/iv_dialog_delete"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/cc"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/ll_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_below="@+id/ll_dialog_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90px"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_dialog_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:hint="       "
+                    android:text="  1"
+                    android:textColor="@color/colororange"
+                    android:textSize="24sp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/et_dialog_input"
+                    android:text="个"
+                    android:textColor="@color/colororange"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_dialog_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_dialog"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="30px"
+                android:text="修改数量"
+                android:textColor="@color/colortextgray"
+                android:textSize="16sp"/>
+
+
+            <Button
+                android:id="@+id/bt_give_money"
+                android:layout_width="680px"
+                android:layout_height="140px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="70px"
+                android:background="@drawable/shape_orange"
+                android:text="赏通币"
+                android:textColor="@color/colorred"
+                android:textSize="18sp"
+
+                />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_ihhr_photo"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:background="@drawable/shape_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mq_image"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/iv_gyz_zhaopian"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_ihhr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:text="fun共享汽车"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16"/>
+
+                <ImageView
+                    android:id="@+id/iv_ihhr_vip"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_ihhr_name"
+                    android:src="@mipmap/vip"/>
+
+                <TextView
+                    android:id="@+id/tv_ihhr_lunci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/iv_ihhr_vip"
+                    android:background="@drawable/shape_blue_lin"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="5px"
+                    android:text="A轮"
+                    android:textColor="@color/colorblue"
+                    android:textSize="@dimen/sp_12"/>
+
+                <TextView
+                    android:id="@+id/tv_ihhr_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="10000W"
+                    android:textColor="@color/colororange"
+                    android:textSize="@dimen/sp_14"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_ihhr_hangye"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="移动互联网"
+                android:textSize="@dimen/sp_14"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_marginLeft="40px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/dingwei"/>
+
+                <TextView
+                    android:id="@+id/tv_ihhr_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="西安市"
+                    android:textSize="@dimen/sp_14"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15px"
+                        android:layout_toLeftOf="@+id/tv_ihhr_liulan_shuliang"
+                        android:src="@mipmap/liulan"/>
+
+                    <TextView
+                        android:id="@+id/tv_ihhr_liulan_shuliang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:layout_toLeftOf="@+id/iv_ihhr_dianzan"
+                        android:text="0"
+                        android:textSize="@dimen/sp_14"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_ihhr_dianzan"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15px"
+                        android:layout_toLeftOf="@+id/tv_ihhr_dianzen_shuliang"
+                        android:src="@mipmap/zan"/>
+
+                    <TextView
+                        android:id="@+id/tv_ihhr_dianzen_shuliang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0"
+                        android:textSize="@dimen/sp_14"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view20background"/>
+</LinearLayout>

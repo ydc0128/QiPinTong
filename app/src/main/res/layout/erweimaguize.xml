@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:text="币斗规则"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.将企聘通“我的二维码”发送到微信好友或让好友微信扫一扫；"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="2.请好友添加关注后，打开升级邀请并注册会员，即可获得10个通币"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="3.10个通币即“钱包”收入1元；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        />
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="4.扫码添加好友的数量不受限制；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="5.“钱包”的收入提现到微信零钱包；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="6“钱包”的收入可以直接转入“币斗”赚取收益；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="7.“钱包”的收入可以在平台入住的商家进行消费；"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_14"
+        android:text="8.所有解释权归企聘通公司所有"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <include layout="@layout/finelinbackground"/>
+    <Button
+        android:id="@+id/bt_ewm_queding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:text="确定"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"/>
+</LinearLayout>

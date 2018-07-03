@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Description:消息页面 -->
+
+
+    <!--Author :感觉自己懵懵哒-->
+
+
+    <!--E-mail :anber1229423614@163.com-->
+
+
+    <include layout="@layout/refresh_head" />
+
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/rv_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more" />
+
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

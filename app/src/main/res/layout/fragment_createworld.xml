@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+    <!--Description:创孵天下的首页-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <include layout="@layout/refresh_head"/>
+
+
+    <com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/bb_create"
+                android:layout_width="match_parent"
+                android:layout_height="480px"
+                ></com.youth.banner.Banner>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="285px"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_create_project"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35px"
+                        android:src="@mipmap/project"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30px"
+                        android:text="好项目"
+                        android:textColor="@color/colortextgray"
+                        android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_create_partnership"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35px"
+                        android:src="@mipmap/partnership"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30px"
+                        android:text="合伙人"
+                        android:textColor="@color/colortextgray"
+                        android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_create_give_money"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35px"
+                        android:src="@mipmap/pay_money"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30px"
+                        android:text="投资机构"
+                        android:textColor="@color/colortextgray"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                >
+
+                <TextView
+                    android:id="@+id/tv_create_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+                    android:text="项目推荐"
+                    android:textColor="@color/colorBlack"
+                    android:textScaleX="1.1"
+                    android:textSize="18sp"
+                    />
+
+                <View
+                    android:layout_width="60px"
+                    android:layout_height="3px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120px"
+                    android:background="@color/colorBlack"
+                    />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_create_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                ></android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_create_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="查看更多"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/sp_14"/>
+
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/right"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/viewlinbackground"/>
+
+            <include layout="@layout/viewlinbackground"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                >
+
+                <TextView
+                    android:id="@+id/tv_create_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+                    android:text="同城路演"
+                    android:textColor="@color/colorBlack"
+                    android:textScaleX="1.1"
+                    android:textSize="18sp"
+                    />
+
+                <View
+                    android:layout_width="60px"
+                    android:layout_height="3px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120px"
+                    android:background="@color/colorBlack"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_create_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="60px"
+                    android:nestedScrollingEnabled="false"
+                    ></android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@color/colorbackground"/>
+
+        </LinearLayout>
+
+    </com.example.qipintongzhongguozongbu.myqipintong.view.PullableScrollView>
+
+    <include layout="@layout/load_more"/>
+
+</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>

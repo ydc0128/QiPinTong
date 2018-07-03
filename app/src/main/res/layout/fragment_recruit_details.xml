@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+    <!--Description:招聘会详情页面-->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="40px"
+            >
+
+            <TextView
+                android:id="@+id/tv_recruit_details_title"
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="2016年丝绸之路冬季大型人才交流会"
+                android:textColor="@color/colortitletext"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_recruit_details_share"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/relaynomai"
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_recruit_details_collect"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@+id/iv_recruit_details_share"
+                android:src="@mipmap/shoucangnomal"
+                />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="15px"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_recruit_details_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="中国.西安"
+                android:textColor="@color/colormuchgray"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_recruit_details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50px"
+                android:singleLine="true"
+                android:text="2016-05-12"
+                android:textColor="@color/colormuchgray"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+
+        <com.youth.banner.Banner
+            android:id="@+id/bb_recruit_details"
+            android:layout_width="match_parent"
+            android:layout_height="430px"
+            android:layout_marginTop="30px">
+
+        </com.youth.banner.Banner>
+
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <include layout="@layout/viewlinbackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="345px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="会期"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recruit_details_deadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50px"
+                    android:text="2016-11-11至11-15"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="费用"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recruit_details_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50px"
+                    android:text="400元/场"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="类型"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recruit_details_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50px"
+                    android:text="综合招聘会"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/finelinbackground"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="115px"
+                android:text="服务"
+                android:gravity="center_vertical"
+                android:textColor="@color/colortitletext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_recruit_details_serve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50px"
+                android:text="2*1标准展位+海报1张+办公文具一套+中餐两份 "
+                android:textColor="@color/colormuchgray"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/viewlinbackground"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="参会须知"
+            android:textColor="@color/colortitletext"
+            android:textSize="14sp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recruit_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="15px"
+                android:nestedScrollingEnabled="false">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+        <include layout="@layout/viewlinbackground"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="联系方式"
+            android:textColor="@color/colortitletext"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="15px"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/phone"
+                />
+
+            <TextView
+                android:id="@+id/tv_recruit_details_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="029-62890806   ,  62890868   ,  62890868   ,   62890868"
+                android:textColor="@color/colormuchgray"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            >
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/location"/>
+
+
+            <TextView
+                android:id="@+id/tv_recruit_details_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导航"
+                android:textColor="@color/colormuchgray"
+                android:textSize="12sp"
+                />
+
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/tv_recruit_details_gps"
+                android:src="@mipmap/guide"
+                />
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="80px"
+                android:layout_toLeftOf="@+id/tv_recruit_details_gps"
+                android:background="@color/colormuchgray"
+                />
+
+            <TextView
+                android:id="@+id/tv_recruit_details_location"
+                android:layout_width="740px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="西安市长安北路14号省体育馆北区10门"
+                android:textColor="@color/colormuchgray"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

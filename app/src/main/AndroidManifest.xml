@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.qipintongzhongguozongbu.myqipintong">
+
+    <permission
+        android:name="com.example.qipintongzhongguozongbu.myqipintong.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!--获取联系人信息，demo中演示发送通讯录消息-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <!-- 需要运行时注册的权限 -->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <!--读取缓存数据-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--用于读取手机当前的状态-->
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 3.2.0版本增加-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Required 一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.example.qipintongzhongguozongbu.myqipintong.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".activity.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/qpt"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon, android:theme">
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="pvxdm17jpgu1r"/>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data
+            android:host="com.example.qipintongzhongguozongbu.myqipintong"
+            android:pathPrefix="/push_message"
+            android:scheme="rong" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppBlackTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.BootActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.GetPhotoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".txl.AddTXLActicity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.AboutRongCloudActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhotoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".rongyun.im.ui.activity.MyAccountActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--选择朋友圈背景墙图片-->
+        <activity
+            android:name=".fragment.penggyoudongtai.SelectBackGroundActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--选择定位地址的页面-->
+        <activity
+            android:name=".fragment.penggyoudongtai.SelectLocationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--微信登录-->
+        <!--qq登录-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106046029" />
+                <!--上面填写腾讯的appid-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle"></activity>
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.qipintongzhongguozongbu.myqipintong" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!--Required 显示通知栏 -->
+                <category android:name="com.example.qipintongzhongguozongbu.myqipintong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+        <!-- User defined. For test only 用户自定义的广播接收器-->
+        <receiver
+            android:name=".server.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.example.qipintongzhongguozongbu.myqipintong" />
+            </intent-filter>
+        </receiver>
+        <!-- Required . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d56ff4552e5d59aca3c3546e" />
+        <!-- </>值来自开发者平台取得的AppKey-->
+        <!--极光推送的key-->
+        <!-- 布局适配-->
+        <meta-data
+            android:name="design_width"
+            android:value="1280"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1920"></meta-data>
+        <!-- 高德地图-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="690656eb839987c5ea4d449b228f4896"></meta-data>
+        <!-- 定位需要的服务 -->
+        <activity
+            android:name=".rongyun.im.ui.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--主页面-->
+        <activity
+            android:name=".rongyun.im.ui.activity.GroupListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.PrivateChatDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--注册页面-->
+        <activity
+            android:name=".rongyun.im.ui.activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--新消息提醒-->
+        <activity
+            android:name=".rongyun.im.ui.activity.NewMessageRemindActivity"
+            android:screenOrientation="portrait" />
+        <!--消息免打扰-->
+        <activity
+            android:name=".rongyun.im.ui.activity.DisturbActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".rongyun.im.ui.activity.MessageDisturbActivity" />
+        <!--隐私-->
+        <activity
+            android:name=".rongyun.im.ui.activity.PrivacyActivity"
+            android:screenOrientation="portrait" />
+        <!--关于-->
+        <!--关于－更新日志-->
+        <activity
+            android:name=".rongyun.im.ui.activity.UpdateLogActivity"
+            android:screenOrientation="portrait" />
+        <!--关于融云－功能介绍-->
+        <activity
+            android:name=".rongyun.im.ui.activity.FunctionIntroducedActivity"
+            android:screenOrientation="portrait" />
+        <!--关于－官方网站-->
+        <activity
+            android:name=".rongyun.im.ui.activity.QiPinTongWebActivity"
+            android:screenOrientation="portrait" />
+        <!--黑名单列表-->
+        <activity
+            android:name=".rongyun.im.ui.activity.BlackListActivity"
+            android:screenOrientation="portrait" />
+        <!--搜索好友-->
+        <activity
+            android:name=".rongyun.im.ui.activity.SelectFriendsActivity"
+            android:screenOrientation="portrait" />
+        <!--新的朋友列表-->
+        <activity
+            android:name=".rongyun.im.ui.activity.NewFriendListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.TotalGroupMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.PublicServiceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.PublicServiceSearchActivity"
+            android:screenOrientation="portrait" />
+        <!--选择联系人 多人聊天-->
+        <activity
+            android:name=".rongyun.im.ui.activity.CreateGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.ReadReceiptDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.DiscussionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.GroupNoticeActivity"
+            android:screenOrientation="portrait" />
+        <!--公众-->
+        <activity
+            android:name=".rongyun.im.ui.activity.PublicServiceInfoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.qipintongzhongguozongbu.myqipintong"
+                    android:pathPrefix="/publicServiceProfile"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.qipintongzhongguozongbu.myqipintong"
+                    android:pathPrefix="/publicServiceInfo"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--会话页面-->
+        <activity android:name=".rongyun.im.ui.activity.DoubleChatRoomActivity" />
+        <activity
+            android:name=".rongyun.im.ui.activity.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.qipintongzhongguozongbu.myqipintong"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--聚合会话列表-->
+        <activity
+            android:name=".rongyun.im.ui.activity.SubConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.qipintongzhongguozongbu.myqipintong"
+                    android:path="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--会话列表-->
+        <activity
+            android:name=".rongyun.im.ui.activity.ConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.qipintongzhongguozongbu.myqipintong"
+                    android:path="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rongyun.im.ui.activity.SealSearchActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".rongyun.im.ui.activity.SealSearchMoreFriendsActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".twofold.TwoLevelLinkageActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".twofold.ValuePickerMockActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".background.WXPwdEditTextActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".background.ConfirmPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".rongyun.im.ui.activity.SealSearchMoreGroupActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".rongyun.im.ui.activity.SealSearchMoreChattingRecordsActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".rongyun.im.ui.activity.SealSearchChattingDetailActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".rongyun.im.ui.activity.UpdateNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" />
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <service android:name=".rongyun.im.server.UpdateService" />
+
+        <activity
+            android:name=".rongyun.im.ui.activity.UserDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.SearchFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rongyun.im.ui.activity.SharedReceiverActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".rongyun.im.ui.activity.NoteInformationActivity" />
+
+        <receiver
+            android:name=".rongyun.im.SealNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <!--第三方的推送 权限 广播 和服务-->
+        <!--华为 配置开始 < -->
+        <receiver
+            android:name="com.huawei.android.pushagent.PushEventReceiver"
+            android:process=":hwpushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL" />
+                <action android:name="com.huawei.intent.action.PUSH" />
+                <action android:name="com.huawei.intent.action.PUSH_ON" />
+                <action android:name="com.huawei.android.push.PLUGIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.huawei.android.pushagent.PushBootReceiver"
+            android:process=":hwpushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <meta-data
+                android:name="CS_cloud_version"
+                android:value="\u0032\u0037\u0030\u0035" />
+        </receiver>
+        <receiver android:name="io.rong.push.platform.HWReceiver">
+            <intent-filter>
+                <!-- 必须,用于接收token-->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息-->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调-->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要-->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+                <!-- 可选，标签、地理位置上报回应，不上报则不需要 -->
+                <action android:name="com.huawei.android.push.plugin.RESPONSE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.android.pushagent.PushService"
+            android:process=":hwpushservice" />
+        <!-- 华为 配置结束 < -->
+        <!-- GCM 配置 < -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.qipintongzhongguozongbu.myqipintong" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="io.rong.push.platform.RongGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.platform.RongGCMInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!--GCM 配置结束 <-->
+        <!--第三方推送的权限 广播 服务 配置结束-->
+        <provider
+
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.qipintongzhongguozongbu.myqipintong.filesProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path"
+                tools:replace="android:resource" />
+        </provider>
+    </application>
+
+</manifest>

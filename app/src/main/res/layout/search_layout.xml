@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorbackground"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+    <!-- 搜索框 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="@color/colorWhite"
+        >
+
+        <ImageView
+            android:id="@+id/iv_search_back"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/back_blue"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30px"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_toRightOf="@+id/iv_search_back"
+            android:background="@drawable/shap_gray_et"
+            >
+
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="start|center_vertical"
+                android:hint="          工作/人才/企业/项目/合伙人"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/colorgray"
+                android:textSize="14sp"/>
+
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50px"
+                android:src="@drawable/ycymsearch"
+                />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="搜索"
+            android:textColor="@color/colorfont"
+            android:textSize="16sp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center_horizontal"
+        android:text="搜索指定内容"
+        android:textColor="@color/colorgray"
+        android:textSize="18sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_search_work"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="工作"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_search_talents"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="人才"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_search_project"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="项目"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_search_company"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="企业"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_search_together"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="合伙人"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <include layout="@layout/view10background"/>
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="left|center_vertical"
+                    android:text="搜索历史"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <com.example.qipintongzhongguozongbu.myqipintong.edittext.Search_Listview
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.qipintongzhongguozongbu.myqipintong.edittext.Search_Listview>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:id="@+id/tv_clear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:text="清除搜索历史"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorbackground"/>
+
+</LinearLayout>

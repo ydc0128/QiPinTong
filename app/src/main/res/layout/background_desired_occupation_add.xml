@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="140px"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="@color/colorblue"-->
+    <!--android:margingLeft="50px"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/rl_desired_occupation_add_back"-->
+    <!--android:layout_width="60px"-->
+    <!--android:layout_height="60px"-->
+    <!--android:background="@mipmap/back"-->
+    <!--android:layout_gravity="center_vertical"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="140px"-->
+    <!--android:text="期望职位"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:gravity="center"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+    <include layout="@layout/viewlinbackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/rl_desired_occupation_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:gravity="center_vertical"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期望职位"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/et_doa_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:hint="请选择"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/et_doa_post"
+                        android:background="@mipmap/arrows"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground" />
+
+        <LinearLayout
+            android:id="@+id/rl_desired_occupation_add_industry"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期望行业"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/et_doa_business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="请选择"
+                        android:textSize="16sp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/et_doa_business"
+                        android:background="@mipmap/arrows"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground" />
+
+        <include layout="@layout/finelinbackground" />
+
+        <LinearLayout
+            android:id="@+id/rl_desired_occupation_add_city"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:gravity="center_vertical"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作城市"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/et_doa_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:hint="请选择"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/et_doa_city"
+                        android:background="@mipmap/arrows"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/finelinbackground" />
+
+        <LinearLayout
+            android:id="@+id/ll_desired_occupation_add_salary"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:gravity="center_vertical"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="薪资要求"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/tv_desired_occupation_add_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:hint="请选择"
+                        android:textSize="16sp"
+                        />
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/tv_desired_occupation_add_salary"
+                        android:background="@mipmap/arrows"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/viewlinbackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px">
+
+        <Button
+
+            android:id="@+id/rl_desired_occupation_add_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_blue"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

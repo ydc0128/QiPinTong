@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description:创投天下合伙人的条目展示 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45px"
+        android:layout_marginTop="35px"
+        android:orientation="horizontal">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/siv_item_together_project_icon"
+            android:layout_width="270px"
+            android:layout_height="270px"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/shape_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/qptheader"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="270px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="-10px"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="任星星"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/tv_item_together_project_name"
+                    android:src="@mipmap/vip"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="23岁"
+                    android:textColor="@color/colortextgray"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_item_together_project_age"
+                    android:text="年龄 : "
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="互联网|软件"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_join"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="寻求加盟"
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="50W"
+                    android:textColor="@color/colororange"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_item_together_project_money"
+                    android:text="投资额 : "
+                    android:textColor="@color/colorgray"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/location"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:text="雁塔区"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_item_together_project_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_item_project_praise"
+                    android:text="9527"
+                    android:textColor="@color/colormuchgray"
+                    android:textSize="14sp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/tv_item_together_project_number"
+                    android:src="@mipmap/eyeimage"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/finelinbackground"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="合作期望 : "
+            android:textColor="@color/colormuchgray"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_together_project_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10px"
+            android:text="8年的销售经验 , 沟通能力强 , 口齿伶俐 , 思维敏捷 , 管理组织能力强"
+            android:textColor="@color/colormuchgray"
+            android:textSize="14sp"
+            />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+
+</LinearLayout>

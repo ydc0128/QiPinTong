@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="30px"
+          android:layout_marginLeft="30px"
+          android:background="@drawable/shape_label"
+          android:paddingBottom="10px"
+          android:paddingLeft="15px"
+          android:paddingRight="15px"
+          android:paddingTop="10px"
+          android:text="Helloworld"
+          android:textColor="@color/colorgreenly"
+          android:textSize="10sp"
+    >
+
+</TextView>
+    <!--Description:标签的文字 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+

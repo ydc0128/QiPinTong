@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_item_text_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:lineSpacingExtra="5px"
+            android:text=" 熟练使用PS等设计软件"
+            android:textColor="@drawable/selector_item_text_color"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@drawable/selector_item_commerce"
+            android:textSize="14sp" />
+
+
+
+</LinearLayout>

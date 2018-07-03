@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_my_earnings_shouyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收益记录"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp"
+        android:paddingRight="50px"
+        android:paddingTop="50px"
+        android:layout_marginLeft="50px"
+        />
+
+       <TextView
+           android:id="@+id/tv_my_earnings_guize"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="提现规则"
+           android:layout_alignParentRight="true"
+           android:textSize="16sp"
+           android:paddingRight="50px"
+           android:paddingTop="50px"
+           android:layout_marginLeft="50px"
+           />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额（元）"
+        android:textSize="16sp"
+        android:paddingTop="180px"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:paddingTop="65px"
+        android:paddingBottom="65px"
+        android:layout_gravity="center_horizontal"/>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:paddingTop="50px"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="今日收益（个）"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:paddingBottom="20px"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="10"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+    <include layout="@layout/link_h"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:paddingTop="50px"
+            android:paddingLeft="50px"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="累计收益（个）"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20px"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="50"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    <!--<Button-->
+        <!--android:id="@+id/bt_my_earnings_guize"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="收益结算及提现规则"-->
+        <!--android:textColor="@color/colorblue"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingTop="100sp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:background="#00000000"-->
+        <!--android:paddingBottom="20px"-->
+        <!--/>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingTop="300px">
+
+    <Button
+        android:id="@+id/bt_my_earnings_top_up"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@drawable/shape_blue"
+        android:text="充值"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+
+       />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        >
+    <Button
+        android:id="@+id/bt_my_earnings_extract"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:text="开通提现"
+        android:textSize="20sp"
+        android:background="@drawable/shap_kiting"
+        android:textColor="@color/colorWhite"
+
+       />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_m_e_cunru"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/bidou" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:text="通币赚米，立即存入"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+           android:layout_gravity="center_vertical"
+            android:layout_marginRight="45px"
+            android:background="@mipmap/arrows"
+            />
+    </LinearLayout>
+<LinearLayout
+
+    android:id="@+id/ll_my_earnings_help"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="60px"
+        android:layout_height="80px"
+        android:src="@mipmap/yijianyufankui"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帮助与反馈"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_16"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
+        </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+

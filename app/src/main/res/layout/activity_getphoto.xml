@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qipintongzhongguozongbu.myqipintong.view.InputMethodLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_getphoto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--Description:获取照片的页面布局 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_alignParentTop="true">
+
+            <!--imeOptions="actionDone" 右下角按键设置为完成-->
+            <TextView
+                android:id="@+id/tv_cancel_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:imeOptions="actionDone"
+                android:text="取消"
+                android:textColor="@color/colortitletext"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/tv_send_photo"
+                android:layout_width="180px"
+                android:layout_height="90px"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_blue"
+                android:text="发送"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:background="@color/colorlinegray" />
+
+
+        <EditText
+            android:id="@+id/et_user_input"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:hint="   这一刻的想法..."
+            android:textColor="@color/colorBlack"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_show_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"></android.support.v7.widget.RecyclerView>
+
+
+        <include layout="@layout/finelinbackground" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px">
+
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/location" />
+
+            <TextView
+                android:id="@+id/tv_show_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75px"
+                android:text="显示位置"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_open_close"
+                android:layout_width="110px"
+                android:layout_height="55px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/turn_off" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_friend_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorbackground"
+            android:orientation="horizontal"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/iv_qq"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/emji" />
+
+
+            <TextView
+                android:id="@+id/tv_qq_or_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:text="表情"
+                android:textColor="@color/colorgray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_qq"
+            android:layout_width="match_parent"
+            android:layout_height="685px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:visibility="gone">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</com.example.qipintongzhongguozongbu.myqipintong.view.InputMethodLayout>

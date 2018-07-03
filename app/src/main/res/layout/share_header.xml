@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.youth.banner.Banner
+            android:id="@+id/bb_expert"
+            android:layout_width="match_parent"
+            android:layout_height="480px"></com.youth.banner.Banner>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:background="@color/colorWhite">
+
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/time_job" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="130px"
+                android:layout_marginRight="40px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="达人帮 ， 自由人职业来袭"
+                android:textColor="@color/colortitletext"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_expert_join"
+                android:layout_width="270px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_button_orange"
+                android:text="我要加入"
+                android:textColor="@color/colororange"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/view15background" />
+
+    <include layout="@layout/view15background" />
+
+    <include layout="@layout/select_label" />
+
+
+</LinearLayout>

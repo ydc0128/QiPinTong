@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/xingming.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/activity/AppApplication.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/activity/BootActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/activity/HomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/activity/PhotoActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/activity/SplashActivity.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/adapter/CommerceAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/adapter/CommerceIconAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/adapter/CommerceSelectAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/adapter/GirdDropDownAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/qipintongzhongguozongbu/myqipintong/adapter/GiveMoneyCompanyAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/xingming.sql" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

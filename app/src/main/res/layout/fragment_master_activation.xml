@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1180px"
+        android:background="@mipmap/darenbangjihuo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="企聘通求职招聘更轻松！实现信息“四通”交互模式，精准的信息匹配机制，真正的开启减法模式——非凡的轻松！"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+    <Button
+        android:id="@+id/bt_master_actovation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即激活"
+        android:background="@drawable/shape_orange"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"/>
+</LinearLayout>

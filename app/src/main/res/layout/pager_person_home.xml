@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--Description:有才有貌个人详情页 主页的内容 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="40px"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tv_person_details_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="中级UI设计师"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_person_details_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/tv_person_details_position"
+                android:text="(全职 5-8k)"
+                android:textColor="@color/colororange"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_person_details_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="查看电话"
+                android:textColor="@color/colorblue"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/location"
+                />
+
+            <TextView
+                android:id="@+id/tv_person_details_locations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="西安"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100px"
+                android:src="@mipmap/time_image"/>
+
+            <TextView
+                android:id="@+id/tv_person_details_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5px"
+                android:text="3年"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100px"
+                android:src="@mipmap/acaimgae"
+                />
+
+            <TextView
+                android:id="@+id/tv_person_details_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="本科"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="期望行业 : "
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_person_details_industry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="互联网/电子商务"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50px"
+                android:text="求职状态 : "
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_person_details_work_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="离职-随时到岗"
+                android:textColor="@color/colormuchgray"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+
+    <include layout="@layout/viewlinbackground"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="我的优势"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_person_details_superiority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:lineSpacingExtra="10px"
+        android:text="8年的销售经验 , 沟通能力强, 口齿伶俐, 思维敏捷, 管理组织能力强,8年的销售经验 , 沟通能力强, 口齿伶俐, 思维敏捷, 管理组织能力强"
+        android:textColor="@color/colormuchgray"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/viewlinbackground"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="自我评价"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_person_details_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:lineSpacingExtra="10px"
+        android:text="有扎实的美术功底, 良好的创意思维和理解能力, 能及时把握客户需求, 精通Photoshop\Dreamweaver\Illustratorh等设计软件 , 对图片的渲染和视觉效果有较好的认识;"
+        android:textColor="@color/colormuchgray"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/viewlinbackground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="教育经历"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_person_details_study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="20px"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="培训经历"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_person_details_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="20px"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="获奖情况"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_person_award"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:lineSpacingExtra="10px"
+        android:text="8年的销售经验 , 沟通能力强, 口齿伶俐, 思维敏捷, 管理组织能力强,8年的销售经验 , 沟通能力强, 口齿伶俐, 思维敏捷, 管理组织能力强"
+        android:textColor="@color/colormuchgray"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/viewlinbackground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="工作经历"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_person_details_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="20px"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px">
+
+
+        <com.example.qipintongzhongguozongbu.myqipintong.view.SquareImageView
+            android:id="@+id/iv_item_friend_icon"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:scaleType="centerCrop"
+            android:src="@color/colorBlack"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="220px"
+            android:layout_marginRight="220px"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="点赞的人"
+                android:textColor="@color/colorfont"
+                android:textSize="14sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:src="@mipmap/love_blue"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="12:00"
+                android:textColor="@color/colorgray"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="190px"
+            android:layout_height="190px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@color/colorlinegray">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/nan"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:text="毕竟一生很短难得圆满,久而不得未必遗憾"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_12"
+
+                />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/viewlinbackground"/>
+
+</LinearLayout>

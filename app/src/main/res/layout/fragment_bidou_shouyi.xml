@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_my_earnings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colororange"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="150px"
+                    android:text="昨日收益（个）"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/earnings_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="65px"
+                    android:paddingTop="65px"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fea42d"
+                android:paddingBottom="50px"
+                android:paddingTop="50px">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="20px"
+                        android:text="存入通币数量（个）"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <include layout="@layout/link_h" />
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20px"
+                        android:text="七日收益（个）"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_returns_a_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="50"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view20background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30px"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_m_e_cunru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45px"
+                        android:src="@mipmap/bidou_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30px"
+                        android:text="免费提现，快速到账"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="45px"
+                    android:background="@drawable/shap_kiting_button"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="立即开通"
+                    android:textColor="#ec9f50" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/finelinbackground" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30px"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_m_e_cunru_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45px"
+                        android:src="@mipmap/bidou_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30px"
+                        android:text="充值赚通币，多存多收益"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/finelinbackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="45px"
+                    android:background="@drawable/shap_kiting_button"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="立即充值"
+                    android:textColor="#ec9f50" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/finelinbackground" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30px"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_m_e_cunru_bidouguize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45px"
+                        android:src="@mipmap/bidou_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30px"
+                        android:text="币斗规则"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_ds_chakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/shap_kiting_button"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="查看详情"
+                    android:textColor="#ec9f50" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/finelinbackground" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px">
+
+
+                <LinearLayout
+                    android:id="@+id/rl_my_earnings_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/tv_my_bidou_shouyi_cunru"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/shap_kiting_lin"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="20px"
+                        android:paddingTop="20px"
+                        android:text="转入"
+                        android:textColor="@color/colororange"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_my_bidou_shouyi_zhuanchu"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30px"
+                        android:layout_toRightOf="@+id/tv_my_bidou_shouyi_cunru"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_label_gray"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="20px"
+                        android:paddingTop="20px"
+                        android:text="转出"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>
+

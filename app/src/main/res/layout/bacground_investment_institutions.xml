@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include layout="@layout/viewlinbackground"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_ii_field"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="*"
+            android:textColor="@color/colorred" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:text="投资领域"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_ii_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="请选择"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/tv_ii_field"
+                    android:background="@mipmap/arrows"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_ii_rounds"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorred"
+               android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资轮次"
+                android:textColor="@color/colorBlack"
+               android:textSize="@dimen/sp_16"
+               android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10px"
+                />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_ii_rounds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="请选择"
+                        android:background="@null"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:layout_toRightOf="@+id/tv_ii_rounds"
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                       android:layout_centerVertical="true"
+                        />
+                    </RelativeLayout>
+                </RelativeLayout>
+        </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/ll_ii_city"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorred"
+               android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资区域"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16"
+               android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10px"
+                />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_ii_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="请选择"
+                        android:background="@null"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:layout_toRightOf="@+id/tv_ii_city"
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:background="@mipmap/arrows"
+                       android:layout_centerVertical="true"
+                        />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/rl_ii_amount"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成功数量"
+            android:textColor="@color/colorBlack"
+           android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:background="@mipmap/arrows"
+android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:id="@+id/rl_ii_synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机构简介"
+            android:textColor="@color/colorBlack"
+           android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="10px"
+            />
+
+        <EditText
+            android:id="@+id/tv_ii_synopsis"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请输入"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:paddingRight="20px"
+            android:background="@null"
+            />
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_toRightOf="@+id/tv_ii_synopsis"
+            android:background="@mipmap/arrows"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/finelinbackground"/>
+    <include layout="@layout/finelinbackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="150px"
+        android:layout_marginBottom="150px">
+        <Button
+            android:id="@+id/rl_ii_apply_for"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_blue"
+            android:text="申请"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            />
+</LinearLayout>
+    </LinearLayout>

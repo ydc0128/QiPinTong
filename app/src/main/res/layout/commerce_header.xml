@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Description: -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_select_commerce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/bb_commerce"
+            android:layout_width="match_parent"
+            android:layout_height="480px"></com.youth.banner.Banner>
+
+        <include layout="@layout/view20background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+
+            <ImageView
+                android:id="@+id/iv_home_easy_school"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/youshangmain" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="130px"
+                android:singleLine="true"
+                android:text="易拉客，易推广，易招聘"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/tv_commerce_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_button_red"
+                android:paddingBottom="10px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="10px"
+                android:text="立即入驻"
+                android:textColor="@color/colorred"
+                android:textSize="@dimen/sp_14" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/view20background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="345px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_delicious"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="145px"
+                    android:layout_height="145px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:src="@mipmap/delicious" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60px"
+                    android:text="美食天地"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_leisure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="145px"
+                    android:layout_height="145px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:src="@mipmap/relaxation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60px"
+                    android:text="休闲娱乐"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_beautiful"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="145px"
+                    android:layout_height="145px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:src="@mipmap/beautiful" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60px"
+                    android:text="丽人圈"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_grogshop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="145px"
+                    android:layout_height="145px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:src="@mipmap/grogshop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60px"
+                    android:text="酒店预订"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_commerce_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="145px"
+                    android:layout_height="145px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:src="@mipmap/all" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60px"
+                    android:text="全部"
+                    android:textColor="@color/colortitletext"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/viewlinbackground" />
+
+    </LinearLayout>
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="250px"
+         android:background="@color/colorWhite"
+         >
+
+         <ImageView
+             android:id="@+id/iv_commerce"
+             android:layout_width="240px"
+             android:layout_height="180px"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="30px"
+             android:background="@drawable/gold_select"
+             />
+
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35px"
+             android:layout_marginTop="60px"
+             android:layout_toRightOf="@+id/iv_commerce"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="抢通币"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="18sp"
+                 />
+
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15px"
+                 android:gravity="center"
+                 android:text="免费兑换,可提现"
+                 android:textColor="@color/colormuchgray"
+                 android:textSize="16sp"
+                 />
+
+
+         </LinearLayout>
+
+
+         <Button
+             android:id="@+id/bt_take"
+             android:layout_width="220px"
+             android:layout_height="90px"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="30px"
+             android:background="@mipmap/bt_image"
+             android:text="抢取"
+             android:textColor="@color/colorWhite"
+             android:textSize="16sp"
+             />
+
+     </RelativeLayout> -->
+
+
+    <!--<include layout="@layout/viewlinbackground"/>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:descendantFocusability="blocksDescendants">-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_market"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:nestedScrollingEnabled="false"-->
+    <!--&gt;</android.support.v7.widget.RecyclerView>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<include layout="@layout/viewlinbackground"/>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_commerce_show"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="130px"-->
+    <!--android:background="@drawable/rectangle_lin"-->
+    <!--&gt;-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_commerce_approve"-->
+    <!--android:layout_width="60px"-->
+    <!--android:layout_height="60px"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:src="@mipmap/approve"-->
+    <!--/>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="20px"-->
+    <!--android:layout_toRightOf="@id/iv_commerce_approve"-->
+    <!--android:text="商家免费入驻,客流多重共享"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="16sp"-->
+
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_commerce_down_up"-->
+    <!--android:layout_width="70px"-->
+    <!--android:layout_height="50px"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="30px"-->
+    <!--android:src="@mipmap/cacalogdown"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<include-->
+    <!--layout="@layout/viewlinbackground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--/>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_commerce_vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="335px"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:layout_marginRight="30px"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/shape_orange"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingBottom="10px"-->
+    <!--android:paddingLeft="20px"-->
+    <!--android:paddingRight="20px"-->
+    <!--android:paddingTop="10px"-->
+    <!--android:text="易拉客"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="14sp"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="过客变粉丝"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="14sp"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="20px"-->
+    <!--android:layout_marginTop="30px"-->
+    <!--android:lineSpacingExtra="10px"-->
+    <!--android:text="客户可以通过 '抢通币' 限定区域发放通币 , 主动将捡获通币的用户变为商户的粉丝."-->
+    <!--android:textColor="@color/colorgray"-->
+    <!--android:textSize="14sp"-->
+
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<include-->
+    <!--layout="@layout/viewlinbackground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="335px"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:layout_marginRight="30px"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@drawable/shape_green"-->
+    <!--android:paddingBottom="10px"-->
+    <!--android:paddingLeft="20px"-->
+    <!--android:paddingRight="20px"-->
+    <!--android:paddingTop="10px"-->
+    <!--android:text="易推广"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="14sp"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="粉丝变顾客"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="14sp"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="20px"-->
+    <!--android:layout_marginTop="30px"-->
+    <!--android:lineSpacingExtra="10px"-->
+    <!--android:text="商户可以通过 '朋友动态' 随时发布宣传推广,有效推送至所有粉丝,实现先手转化."-->
+    <!--android:textColor="@color/colorgray"-->
+
+    <!--android:textSize="14sp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<include-->
+    <!--layout="@layout/viewlinbackground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="335px"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:layout_marginRight="30px"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/shape_blue"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10px"-->
+    <!--android:paddingLeft="20px"-->
+    <!--android:paddingRight="20px"-->
+    <!--android:paddingTop="10px"-->
+    <!--android:text="易招聘"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="14sp"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="顾客变同事"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="14sp"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="20px"-->
+    <!--android:layout_marginTop="30px"-->
+    <!--android:lineSpacingExtra="10px"-->
+    <!--android:text="客户可以通过 '全职速聘' 随即免费招兵买马 , 轻松解决招聘难 , 用人难 , 留人难问题."-->
+    <!--android:textColor="@color/colorgray"-->
+    <!--android:textSize="14sp"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_commerce_horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="310px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="易拉客"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15px"-->
+    <!--android:text="过客变粉丝"-->
+    <!--android:textColor="@color/colorgray"-->
+    <!--android:textSize="14sp"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="3px"-->
+    <!--android:layout_height="200px"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@color/colorlinegray"/>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="易推广"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15px"-->
+    <!--android:text="粉丝变顾客"-->
+    <!--android:textColor="@color/colorgray"-->
+    <!--android:textSize="14sp"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="3px"-->
+    <!--android:layout_height="200px"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@color/colorlinegray"/>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="易招聘"-->
+    <!--android:textColor="@color/colortitletext"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15px"-->
+    <!--android:text="顾客变同事"-->
+    <!--android:textColor="@color/colorgray"-->
+    <!--android:textSize="14sp"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<include-->
+    <!--layout="@layout/viewlinbackground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--/>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250px"-->
+    <!--&gt;-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/bt_commerce_join"-->
+    <!--android:layout_width="800px"-->
+    <!--android:layout_height="115px"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/shape_orange"-->
+    <!--android:text="立即入驻"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="16sp"-->
+    <!--/>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <include layout="@layout/select_label" />
+</LinearLayout>

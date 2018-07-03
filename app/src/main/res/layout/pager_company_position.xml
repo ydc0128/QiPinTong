@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorbackground"
+              android:orientation="vertical">
+    <!--Description:公司详情页的职位内容 -->
+    <!--Author     :感觉自己懵懵哒-->
+    <!--E-mail     :anber1229423614@163.com-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_company_details_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:nestedScrollingEnabled="false"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

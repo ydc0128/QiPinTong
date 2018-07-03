@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:stick="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tl="http://schemas.android.com/tools"-->
+<!--android:id="@+id/rf_home_new"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/colorWhite"-->
+<!--&gt;-->
+<!--Description: -->
+<!--Author     :感觉自己懵懵哒-->
+<!--E-mail     :anber1229423614@163.com-->
+
+<!--<include layout="@layout/refresh_head"/>-->
+<!-- 支持所有实现Pullable接口的View -->
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stick="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srl_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <com.gxz.library.StickyNavLayout
+        android:id="@+id/id_stick"
+        android:layout_width="match_parent"
+        android:layout_height="1650px"
+        stick:isStickNav="false">
+
+        <LinearLayout
+            android:id="@+id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/bb_home_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="480px"
+                    ></com.youth.banner.Banner>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home_icon_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></android.support.v7.widget.RecyclerView>
+
+                <include layout="@layout/view15background"/>
+
+                <include layout="@layout/view15background"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px">
+
+                    <ImageView
+                        android:id="@+id/iv_home_easy_school"
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:src="@mipmap/qpt"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="130px"
+                        android:singleLine="true"
+                        android:text="万物共享 , 所见即所得"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/sp_16"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_home_join"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:background="@drawable/shape_button_blue"
+                        android:paddingBottom="10px"
+                        android:paddingLeft="50px"
+                        android:paddingRight="50px"
+                        android:paddingTop="10px"
+                        android:text="立即加入"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/sp_14"/>
+
+
+                </RelativeLayout>
+
+
+                <include layout="@layout/view15background"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="@color/colorWhite"
+            stick:tl_indicator_color="@color/colorblue"
+            stick:tl_textAllCaps="true"
+            stick:tl_textBold="BOTH"
+            stick:tl_textSelectColor="@color/colorBlack"
+            stick:tl_textUnselectColor="@color/colorgray"
+            stick:tl_textsize="@dimen/sp_16"
+            />
+
+        <include layout="@layout/finelinbackground"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></android.support.v4.view.ViewPager>
+
+
+    </com.gxz.library.StickyNavLayout>
+
+    <!--<include layout="@layout/load_more"/>-->
+
+    <!--</com.example.qipintongzhongguozongbu.myqipintong.view.PullToRefreshLayout>-->
+</android.support.v4.widget.SwipeRefreshLayout>
